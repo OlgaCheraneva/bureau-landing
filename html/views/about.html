@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>О компании</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/catalogPage/headline.css" />
+        <link rel="stylesheet" href="css/catalogPage/section_2.css" />
+    </head>
+    <body>
+        <%= _.template(require('./../includes/header.html').default)() %>
+        <main>
+            <section class="headline">
+                <div class="headline__background-light-theme"></div>
+                <img
+                    class="pointer-to-left"
+                    src="img/Group 5.svg"
+                    alt="Стрелка влево"
+                    title="Стрелка влево"
+                />
+                <div class="catalog__title">
+                    <h1 class="event__title">Наши объекты</h1>
+                    <div class="line-light-theme__news"></div>
+                    <form class="search-bar">
+                        <div class="area-input-wrapper">
+                            <select class="area search-bar__input">
+                                <option>Район</option>
+                            </select>
+                            <img
+                                class="geo"
+                                src="img/geo.png"
+                                alt="Район"
+                                title="Район"
+                            />
+                        </div>
+                        <input
+                            type="text"
+                            class="search-bar__input"
+                            placeholder="1к. кв."
+                        />
+                        <input
+                            type="text"
+                            class="search-bar__input"
+                            placeholder="Метраж"
+                        />
+                        <input
+                            type="text"
+                            class="search-bar__input"
+                            placeholder="Сортировать"
+                        />
+                        <div class="golden-frame golden-frame__background">
+                            <button class="catalog__search-button">
+                                Смотреть
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <img
+                    class="pointer-to-down"
+                    src="img/Group 11.svg"
+                    alt="Стрелка вниз"
+                    title="Стрелка вниз"
+                />
+            </section>
+            <section></section>
+        </main>
+        <%= _.template(require('./../includes/footer.html').default)() %>
+    </body>
+</html>

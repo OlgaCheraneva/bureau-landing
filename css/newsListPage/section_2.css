@@ -1,0 +1,127 @@
+.news {
+    display: flex;
+}
+
+.info {
+    width: 65.069vw;
+    padding: 2.5vw 0 0;
+}
+
+.mass-media-news {
+    width: 34.93vw;
+    background: #f7f5f5;
+}
+
+.information-articles {
+    width: 38.194vw;
+    margin-bottom: 3.194vw;
+}
+
+.image__info-articles {
+    width: 38.056vw;
+    height: 25.764vw;
+    margin-bottom: 3.056vw;
+    cursor: pointer;
+}
+
+.title__info-articles {
+    width: 100%;
+    font-family: Beaumaris Demo;
+    font-size: 1.667vw;
+    line-height: 135%;
+    margin-top: 3.889vw;
+    letter-spacing: 0.03em;
+    color: #f3c61c;
+    cursor: pointer;
+}
+
+.description__info-articles {
+    width: 100%;
+    margin: 1.181vw 0;
+    font-size: 1.111vw;
+    line-height: 174%;
+    letter-spacing: 0.07em;
+    color: #333333;
+}
+
+.pointer-to-right {
+    transform: rotate(-180deg);
+    width: 2.708vw;
+    height: 1.389vw;
+    cursor: pointer;
+}
+
+.mass-media-news__title {
+    margin-top: 22.903vw;
+    margin-left: 5.278vw;
+    font-size: 0.833vw;
+    line-height: 0.764vw;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #f3c61c;
+}
+
+.mass-media__news {
+    margin-left: 5.278vw;
+}
+
+.mass-media-news-list {
+    margin-top: 4.5vw;
+}
+
+.mass-media__line_light-theme {
+    width: 1.806vw;
+    height: 0;
+    border: 0.052vw solid #f3c61c;
+    margin: 0.833vw 0;
+}
+
+.date__mass-media-news {
+    font-family: 'Beaumaris Demo', sans-serif;
+    font-size: 0.972vw;
+    line-height: 95%;
+    letter-spacing: 0.06em;
+    color: #969595;
+}
+
+.description__mass-media-news {
+    display: block;
+    font-size: 1.111vw;
+    line-height: 146.28%;
+    width: 19.861vw;
+    letter-spacing: 0.05em;
+    color: #b0abab;
+    cursor: pointer;
+}
+
+.property {
+    width: 7.639vw;
+    height: 1.319vw;
+    margin-top: 0.903vw;
+}
+
+.load-more {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.694vw;
+    line-height: 0.694vw;
+    width: 11.111vw;
+    height: 2.708vw;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 0.035vw solid #f3c61c;
+    margin: 20px auto 30px;
+    cursor: pointer;
+}
+
+.load-more::before {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    transform: translate3d(0.208vw, 0.208vw, 0);
+    content: '';
+    border: 0.035vw solid #f3c61c;
+}

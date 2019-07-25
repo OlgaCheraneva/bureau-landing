@@ -1,0 +1,80 @@
+.coordinates {
+    padding: 4.167vw 0 4.375vw;
+    background-image: url(../../img/map.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 47.847vw;
+}
+
+.coordinates__inner {
+    display: flex;
+}
+
+.coordinates__map {
+    width: 50%;
+    position: relative;
+}
+
+.coordinates__map__pointer {
+    width: 1.597vw;
+    position: absolute;
+    top: 28.5vw;
+    left: 29.5vw;
+}
+
+.coordinates__info-container,
+.coordinates__info {
+    width: 20.347vw;
+    height: 20.347vw;
+}
+
+.coordinates__info-container {
+    margin-top: 5.278vw;
+    background: #fff;
+}
+
+.coordinates__info {
+    position: relative;
+    bottom: 0.694vw;
+    right: 0.694vw;
+    border: 0.069vw solid #f3c61c;
+    font-size: 0.972vw;
+    line-height: 182%;
+    padding: 2.361vw 0 0 1.736vw;
+}
+
+.info__contacts-list {
+    margin-bottom: 1.782vw;
+}
+
+.info__contacts-list-item .email {
+    text-decoration-line: underline;
+    color: #0c466c;
+}
+
+.info__contacts-list-item .phone {
+    font-weight: bold;
+    color: #000;
+}
+
+.info__working-time {
+    margin-bottom: 1.634vw;
+    line-height: 174.4%;
+    color: #1e1e1c;
+}
+
+.info__address {
+    margin-bottom: 2.292vw;
+    line-height: 174.4%;
+    color: #1e1e1c;
+}
+
+.info__working-time__title,
+.info__address__title {
+    display: block;
+    font-weight: bold;
+}
+
+.coordinates__form-container {
+    width: 50%;
+}

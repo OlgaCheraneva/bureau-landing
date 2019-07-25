@@ -1,0 +1,38 @@
+.awards__inner {
+    padding: 6.944vw 0;
+}
+
+.awards__header {
+    font-family: 'Beaumaris Demo', serif;
+    font-size: 2.917vw;
+    line-height: 95%;
+    letter-spacing: 0.03em;
+    color: #333;
+    margin-bottom: 4.444vw;
+}
+
+.awards__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4.931vw;
+}
+
+.award:not(:last-child) {
+    margin-right: 12.917vw;
+}
+
+.award__image {
+    width: 7.639vw;
+    display: block;
+    margin: 0 auto 1.875vw;
+}
+
+.award__signature {
+    font-family: 'Beaumaris Demo', serif;
+    font-size: 1.25vw;
+    line-height: 95%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #333;
+    text-align: center;
+}

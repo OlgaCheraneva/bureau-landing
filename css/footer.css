@@ -1,0 +1,81 @@
+.footer {
+    background: #1E1E1C;
+    padding-top: 3.819vw;
+    padding-bottom: 2.292vw;
+}
+
+.footer__row {
+    display: flex;
+}
+
+.footer__nav {
+    margin-right: 6.181vw;
+}
+
+.footer__contacts {
+    width: 16.806vw;
+    margin-left: auto;
+    text-align: right;
+}
+
+.footer__company-name, .footer__info-header, .footer__nav-list-item, .footer__info-list-item {
+    font-size: 0.972vw;
+    line-height: 156.78%;
+    letter-spacing: 0.05em;
+}
+
+.footer__company-name, .footer__info-header {
+    margin-bottom: 1.319vw;
+    color: #F3C61C;
+}
+
+.footer__nav-list-item, .footer__info-list-item {
+    color: #969595;
+}
+
+.footer__nav-list-item:not(:last-child), .footer__info-list-item:not(:last-child) {
+    margin-bottom: 1.042vw;
+}
+
+.footer__contacts-header {
+    font-family: 'Beaumaris Demo', serif;
+    font-size: 1.667vw;
+    line-height: 115%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    margin-bottom: 1.25vw;
+}
+
+.footer__contacts-list-item .email {
+    font-size: 0.972vw;
+    line-height: 182%;
+    text-decoration-line: underline;
+    color: #F3C61C;
+}
+
+.footer__social-media-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.014vw;
+}
+
+.footer__social-media-list-item:not(:last-child) {
+    margin-right: 2.083vw;
+}
+
+.footer__social-media__icon {
+    width: 1.597vw;
+}
+
+.footer__line {
+    width: 4.931vw;
+    border: 0.069vw solid #F3C61C;
+    margin: 1.458vw 0 1.354vw;
+}
+
+.footer__copyright {
+    font-size: 0.833vw;
+    line-height: 156.78%;
+    letter-spacing: 0.05em;
+    color: #969595;
+}

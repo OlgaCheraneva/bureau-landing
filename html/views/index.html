@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Бюро Недвижимости</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/mainPage/intro.css" />
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/advantages.css" />
+        <link rel="stylesheet" href="css/awards.css" />
+        <link rel="stylesheet" href="css/mainPage/new-objects.css" />
+        <link rel="stylesheet" href="css/mainPage/news.css" />
+        <link rel="stylesheet" href="css/mainPage/coordinates.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <link rel="stylesheet" href="css/reviews.css" />
+        <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/swiper.min.css" />
+    </head>
+    <body>
+        <%= _.template(require('./../includes/modal-form.html').default)() %>
+        <%= _.template(require('./../includes/header.html').default)() %>
+        <main>
+            <%= _.template(require('./../includes/intro.html').default)() %> <%=
+            _.template(require('./../includes/who-are-we.html').default)() %>
+            <%= _.template(require('./../includes/advantages.html').default)()
+            %> <%= _.template(require('./../includes/awards.html').default)() %>
+            <%= _.template(require('./../includes/new-objects.html').default)()
+            %> <%= _.template(require('./../includes/reviews.html').default)()
+            %> <%= _.template(require('./../includes/news.html').default)() %>
+            <%= _.template(require('./../includes/coordinates.html').default)()
+            %>
+        </main>
+        <%= _.template(require('./../includes/footer.html').default)() %>
+        <script src="./bundle.js"></script>
+    </body>
+</html>

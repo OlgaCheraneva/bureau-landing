@@ -1,0 +1,47 @@
+.header {
+    z-index: 1;
+    position: relative;
+    height: 4.653vw;
+    padding-top: 1.3vw;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 16.875vw;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.4vw 0 auto;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 1.5vw;
+}
+
+.nav__link, .nav__request-button {
+    font-size: 0.694vw;
+    line-height: 100%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+}
+
+.nav__request-button {
+    padding: 1.111vw 1.25vw 0.903vw;
+}
+
+.phone {
+    font-size: 0.972vw;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+    color: #fff;
+}

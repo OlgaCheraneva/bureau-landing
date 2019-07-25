@@ -1,0 +1,97 @@
+.reviews {
+    background: rgba(229, 229, 229, 0.2);
+}
+
+.reviews__inner {
+    padding: 3.264vw 0 2.639vw;
+}
+
+.reviews__header {
+    font-family: 'Beaumaris Demo', sans-serif;
+    font-size: 3.611vw;
+    line-height: 95%;
+    letter-spacing: 0.03em;
+    color: #333;
+    margin-bottom: 3.403vw;
+}
+
+.swiper-container.reviews__list-container {
+    margin: 0 -9.375vw 0 8.681vw;
+    width: 81.944vw;
+    box-sizing: content-box;
+}
+
+.swiper-wrapper.reviews__list {
+    height: 18.056vw;
+}
+
+.swiper-slide.review {
+    width: 48.333vw;
+    height: 18.056vw;
+    display: flex;
+}
+
+.swiper-slide.review:not(:last-child) {
+    margin-right: 12.639vw;
+}
+
+.swiper-slide.review:last-child {
+    margin-right: 33.611vw;
+}
+
+#reviews-pagination {
+    width: 72.569vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2.917vw auto 0;
+    position: static;
+}
+
+.reviews .swiper-pagination-bullet {
+    width: 0.347vw;
+    height: 0.347vw;
+    background: #1C6799;
+    opacity: 0.5;
+    font-size: 0;
+    margin: auto 0.417vw;
+}
+
+.reviews .swiper-pagination-bullet-active {
+    width: 1.875vw;
+    height: 1.875vw;
+    border: 0.069vw solid #F3C61C;
+    border-radius: 50%;
+    font-family: 'Beaumaris Demo', sans-serif;
+    font-size: 0.972vw;
+    line-height: 1.7vw;
+    letter-spacing: 0.06em;
+    color: #F3C61C;
+    background: none;
+    outline: none;
+    margin: 0 0.486vw;
+}
+
+.review__image {
+    object-fit: contain;
+}
+
+.review__text-box {
+    padding: 2.014vw 3.611vw 2.083vw 2.431vw;
+}
+
+.review__header {
+    font-family: 'Beaumaris Demo', sans-serif;
+    font-size: 1.667vw;
+    line-height: 115%;
+    letter-spacing: 0.03em;
+    color: #000;
+    margin-bottom: 1.736vw;
+}
+
+.review__content {
+    font-size: 0.972vw;
+    line-height: 168.2%;
+    letter-spacing: 0.06em;
+    color: #676767;
+}

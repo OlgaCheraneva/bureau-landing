@@ -1,0 +1,103 @@
+.coordinates__form-container {
+    padding-left: 3.472vw;
+}
+
+.coordinates__form__title {
+    font-size: 0.833vw;
+    line-height: 92%;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #f3c61c;
+    margin-bottom: 0.278vw;
+}
+
+.coordinates__form__text {
+    font-family: 'Beaumaris Demo', sans-serif;
+    font-size: 1.667vw;
+    line-height: 115%;
+    letter-spacing: 0.03em;
+    color: #333;
+    padding-bottom: 3.819vw;
+}
+
+.coordinates__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.coordinates__form__input {
+    font-size: 0.972vw;
+    line-height: 93%;
+    letter-spacing: 0.04em;
+    color: #676767;
+    padding-bottom: 0.694vw;
+    border: none;
+    border-bottom: 0.069vw solid #969595;
+}
+
+.coordinates__form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.167vw;
+}
+
+.coordinates__form-group .coordinates__form__input {
+    flex-grow: 1;
+}
+
+.coordinates__form-group .coordinates__form__input:first-child {
+    margin-right: 1.806vw;
+}
+
+.coordinates__form__email-input {
+    margin-bottom: 4.167vw;
+}
+
+.coordinates__form__message-input {
+    margin-bottom: 13.229vw;
+}
+
+.coordinates__form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agree-block__checkbox-label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.agree-block__checkbox {
+    display: none;
+}
+
+.agree-block__fake-checkbox {
+    width: 1.458vw;
+    height: 1.458vw;
+    border: 0.069vw solid #c4c4c4;
+    position: relative;
+    margin-right: 0.972vw;
+    display: block;
+}
+
+.agree-block__checkbox__label {
+    font-size: 0.694vw;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    color: #333;
+}
+
+.coordinates__form__submit-button {
+    font-size: 0.694vw;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #333;
+    padding: 1.25vw 2.708vw 0.764vw 2.917vw;
+}

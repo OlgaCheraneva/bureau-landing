@@ -1,0 +1,69 @@
+.intro {
+    padding-top: 16.458vw;
+    background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.25) 100%
+        ),
+        url(../../img/1.png);
+    mix-blend-mode: multiply;
+    background-size: cover;
+    position: relative;
+    height: 55.556vw;
+}
+
+.intro__inner {
+    margin-right: 34.722vw;
+}
+
+.block-1__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 55.556vw;
+}
+
+.intro__link {
+    font-size: 0.833vw;
+    line-height: 0.764vw;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #f3c61c;
+    padding-bottom: 0.764vw;
+}
+
+.intro__header {
+    margin: 0;
+    width: 46.5vw;
+    font: normal normal 4.722vw/ 95% 'Beaumaris Demo', serif;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+
+.line {
+    width: 4.17vw;
+    height: 0.069vw;
+    background: #f3c61c;
+    margin: 2.153vw 0;
+}
+
+.intro__text {
+    width: 33.8vw;
+    font-size: 1.25vw;
+    line-height: 168.2%;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+
+.main-page__block-1__arrow {
+    position: absolute;
+    top: 26.25vw;
+    right: 2.083vw;
+}
+
+.numbers {
+    position: absolute;
+    right: 2.083vw;
+    bottom: 2.569vw;
+}

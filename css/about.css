@@ -1,0 +1,89 @@
+.about {
+    padding-bottom: 3.125vw;
+    position: relative;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__photo-container {
+    margin-right: 9.583vw;
+}
+
+.photo__background {
+    width: 31.111vw;
+    height: 31.111vw;
+    background-image: url(../../img/marble.png);
+    background-size: cover;
+    padding: 2.083vw;
+    margin-top: 11.667vw;
+    box-sizing: border-box;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 0.069vw solid #f3c61c;
+}
+
+.photo {
+    width: 25.069vw;
+    position: absolute;
+    left: calc((100% - 25.069vw) / 2);
+    bottom: 0;
+}
+
+.about__text-container {
+    margin-top: 11.111vw;
+    position: relative;
+}
+
+.about__header {
+    font-family: 'Beaumaris Demo', serif;
+    font-size: 3.611vw;
+    line-height: 95%;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+
+.line {
+    width: 4.17vw;
+    height: 0.069vw;
+    background: #f3c61c;
+    margin: 1.736vw 0;
+}
+
+.about__text {
+    font-size: 1.111vw;
+    line-height: 168.2%;
+    letter-spacing: 0.06em;
+    color: #333;
+    margin-right: 2.778vw;
+    position: relative;
+}
+
+.opening-quotes {
+    width: 6.806vw;
+    position: absolute;
+    top: -2.014vw;
+    left: -5.347vw;
+    z-index: -1;
+}
+
+.closing-quotes {
+    width: 6.806vw;
+    position: absolute;
+    bottom: -2.43vw;
+    right: 1.944vw;
+    z-index: -1;
+}
+
+.signature {
+    width: 13.819vw;
+    position: absolute;
+    left: 34.097vw;
+    top: 37.5vw;
+}

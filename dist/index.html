@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Бюро Недвижимости</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/mainPage/intro.css" />
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/advantages.css" />
+        <link rel="stylesheet" href="css/awards.css" />
+        <link rel="stylesheet" href="css/mainPage/new-objects.css" />
+        <link rel="stylesheet" href="css/mainPage/news.css" />
+        <link rel="stylesheet" href="css/mainPage/coordinates.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <link rel="stylesheet" href="css/reviews.css" />
+        <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/swiper.min.css" />
+    </head>
+    <body>
+        <div id="modal-form" class="modal-form-background">
+    <section class="modal-form-container">
+        <div class="modal-form__title-box">
+            <div class="modal-form__title">
+                Ваша заявка
+            </div>
+            <div class="modal-form__text">
+                Наши специалисты организуют просмотр квартиры и проведут сделку
+            </div>
+        </div>
+        <form action="submit" class="modal-form">
+            <div class="modal-form-group">
+                <input
+                    type="text"
+                    class="modal-form__input"
+                    placeholder="Имя"
+                    required
+                />
+                <input
+                    type="text"
+                    class="modal-form__input"
+                    placeholder="Телефон"
+                    required
+                />
+            </div>
+            <input
+                type="email"
+                class="modal-form__input modal-form__email-input"
+                placeholder="Почта"
+                required
+            />
+            <input
+                type="text"
+                class="modal-form__input modal-form__message-input"
+                placeholder="Ваше сообщение"
+                required
+            />
+            <div class="modal-form-footer">
+                <div class="modal-form__agree-block">
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="subscribe"
+                        /><span class="agree-block__fake-checkbox"></span>
+                        <span class="agree-block__checkbox__label"
+                            >Подписка на новости</span
+                        >
+                    </label>
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="isAgree"
+                        /><span class="agree-block__fake-checkbox"></span>
+                        <span class="agree-block__checkbox__label"
+                            >Я согласен с предосталением персональных
+                            данных</span
+                        >
+                    </label>
+                </div>
+                <div class="golden-frame">
+                    <button class="modal-form__submit-button" type="submit">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </form>
+        <a href="#" class="modal-frame__close-button"
+            ><img
+                src="/img/x.svg"
+                alt="Закрыть"
+                class="modal-frame__close-button__image"
+        /></a>
+    </section>
+</div>
+
+        <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="/">
+                <img
+                    src="/img/logo_light-theme.svg"
+                    alt="Логотип"
+                    title="Логотип"
+                    class="logo"
+                />
+            </a>
+            <nav class="nav">
+                <ul class="nav__list list">
+                    <li class="nav__item">
+                        <a href="/about.html" class="nav__link link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/catalog.html" class="nav__link link">
+                            Каталог объектов
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/news-list.html" class="nav__link link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/contacts.html" class="nav__link link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <div class="golden-frame">
+                            <a class="nav__request-button" href="#modal-form">
+                                Оформить заявку
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <a class="phone" href="tel:78121341142">+7 (812) 134-11-42</a>
+        </div>
+    </div>
+</header>
+
+        <main>
+            <section class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <a href="#" class="intro__link link">Недвижимость для вас</a>
+            <h1 class="intro__header">
+                Открываем двери вашего будущего
+            </h1>
+            <div class="line"></div>
+            <p class="intro__text">
+                Элитная недвижимость в таком удивительном городе, как
+                Санкт-Петербург, остается идеальным способом ощутить настоящую
+                гармонию и удовольствие.
+            </p>
+        </div>
+        <img
+            src="img/arrow.svg"
+            alt="Стрелка"
+            class="main-page__block-1__arrow"
+        />
+        <img src="img/01_03.svg" alt="01/03" class="numbers" />
+    </div>
+</section>
+ <section class="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__photo-container">
+                <div class="photo__background">
+                    <div class="frame">
+                        <img
+                            class="photo"
+                            src="/img/larisa.png"
+                            alt="Фото сотрудника"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="about__text-container">
+                <img
+                    class="opening-quotes"
+                    src="/img/quotes.svg"
+                    alt="Кавычки"
+                />
+                <h2 class="about__header">Кто мы?</h2>
+                <div class="line"></div>
+                <p class="about__text">
+                    Выражение «Мой дом – моя крепость» имеет в современных
+                    реалиях несколько отличающийся от первоначального смысл.
+                    Каждому из нас присуще желание возвращаться из бурлящего
+                    водоворота повседневных хлопот, нескончаемой вереницы
+                    деловых встреч, решения производственных и бизнесовых
+                    вопросов в уютную пристань родного дома, где можно набраться
+                    сил, отвлечься от рутинной суеты в обстановке комфорта,
+                    покоя, наслаждения от окружающей изысканности.
+                    <img
+                        class="closing-quotes"
+                        src="/img/quotes.svg"
+                        alt="Кавычки"
+                    />
+                </p>
+            </div>
+        </div>
+        <img src="/img/signature.png" alt="Подпись" class="signature" />
+    </div>
+</section>
+
+            <section class="advantages">
+    <div class="container">
+        <div class="advantages__inner">
+            <h1 class="advantages__header">Почему мы</h1>
+            <div class="advantages__row">
+                <div class="advantages__item advantages__item-1">
+                    <div class="advantages__icon-container">
+                        <img
+                            src="/img/bulb.svg"
+                            alt="Лампа"
+                            class="advantages__icon"
+                        />
+                    </div>
+                    <div class="wrapper">
+                        <h4 class="item__header">
+                            Ломаем стереотипы
+                        </h4>
+                        <p class="advantages__text">
+                            Мы применяем все мыслимые способы реализации,
+                            включая креативную рекламу, работу по повышению
+                            лояльности нашей целевой аудитории.
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__item advantages__item-2">
+                    <div class="advantages__icon-container">
+                        <img
+                            src="/img/handshake.svg"
+                            alt="Рукопожатие"
+                            class="advantages__icon"
+                        />
+                    </div>
+                    <div class="wrapper">
+                        <h4 class="item__header">
+                            Сотрудничество со Сбербанком и другими банками
+                        </h4>
+                        <p class="advantages__text">
+                            Это позволяет получать преференции и добиваться
+                            одобрения ипотеки для клиентов в 9 из 10 случаях.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__row">
+                <div class="advantages__item advantages__item-3">
+                    <div class="advantages__icon-container">
+                        <img
+                            src="/img/lock.svg"
+                            alt="Замок"
+                            class="advantages__icon"
+                        />
+                    </div>
+                    <div class="wrapper">
+                        <h4 class="item__header">
+                            Безопасность и гарантия сделки
+                        </h4>
+                        <p class="advantages__text">
+                            В защите интересов наших клиентов, наших партнеров,
+                            честных людей, которые нам доверяют, мы пойдем до
+                            конца.
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__item advantages__item-4">
+                    <div class="advantages__icon-container">
+                        <img
+                            src="/img/suitcase.svg"
+                            alt="Портфель"
+                            class="advantages__icon"
+                        />
+                    </div>
+                    <div class="wrapper">
+                        <h4 class="item__header">
+                            Юридическое сопровождение сделки
+                        </h4>
+                        <p class="advantages__text">
+                            Оформление документов по доверенности. Возможно
+                            быстрое заключение сделок одним днем.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="awards">
+    <div class="container">
+        <div class="awards__inner">
+            <h3 class="awards__header">Наши награды</h3>
+            <ul class="awards__list">
+                <li class="award">
+                    <img
+                        src="/img/award_ndv_1.png"
+                        alt="Премия “Народная марка”"
+                        class="award__image"
+                    />
+                    <div class="award__signature">
+                        Премия “Народная марка”
+                    </div>
+                </li>
+                <li class="award">
+                    <img
+                        src="/img/award_ndv_3.png"
+                        alt="Премия “Народная марка”"
+                        class="award__image"
+                    />
+                    <div class="award__signature">
+                        Премия “Народная марка”
+                    </div>
+                </li>
+                <li class="award">
+                    <img
+                        src="/img/award_ndv_4.png"
+                        alt="Премия “Народная марка”"
+                        class="award__image"
+                    />
+                    <div class="award__signature">
+                        Премия “Народная марка”
+                    </div>
+                </li>
+                <li class="award">
+                    <img
+                        src="/img/award_ndv_7.png"
+                        alt="Премия “Народная марка”"
+                        class="award__image"
+                    />
+                    <div class="award__signature">
+                        Премия “Народная марка”
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="new-objects">
+    <div class="container">
+        <div class="new-objects__top">
+            <h2 class="new-objects__header">Новые объекты</h2>
+            <a href="#" class="all-objects">
+                Все объекты
+                <img
+                    src="img/arrow_2.svg"
+                    alt="Стрелка"
+                    class="all-objects__arrow"
+                />
+            </a>
+        </div>
+        <div class="new-objects__content">
+            <div class="new-objects__left-column">
+                <ul class="new-objects__list">
+                    <li class="new-object">
+                        <img
+                            src="img/new-object-1.png"
+                            alt="Новый объект"
+                            class="new-object__image"
+                        />
+                        <div class="new-object__frame"></div>
+                        <div class="new-object__company-logo-container">
+                            <img
+                                class="new-object__company-logo"
+                                src="img/NORMANN.svg"
+                                alt="NORMANN"
+                            />
+                        </div>
+                        <ul class="new-object__info">
+                            <li class="new-object__area">
+                                ПЕТРОГРАДСКИЙ РАЙОН
+                            </li>
+                            <li class="new-object__name">
+                                Квартира на Плуталова
+                            </li>
+                            <li class="new-object__address">
+                                Санкт-Петербург, Плуталова, 13 лит. А
+                            </li>
+                            <li class="new-object__description">
+                                3х комнатная квартира
+                                <div class="ellipse"></div>
+                                385 м<sup>2</sup>
+                            </li>
+                            <li
+                                class="new-object__full-description-link-container golden-frame"
+                            >
+                                <a
+                                    href="#"
+                                    class="new-object__full-description-link"
+                                    >Смотреть</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="new-object">
+                        <img
+                            src="img/new-object-3.png"
+                            alt="Новый объект"
+                            class="new-object__image"
+                        />
+                        <div class="new-object__frame"></div>
+                        <div class="new-object__company-logo-container">
+                            <img
+                                class="new-object__company-logo"
+                                src="img/legenda.svg"
+                                alt="Legend"
+                            />
+                        </div>
+                        <ul class="new-object__info">
+                            <li class="new-object__area">
+                                ВЫБОРГСКИЙ РАЙОН
+                            </li>
+                            <li class="new-object__name">
+                                Legenda Институтского
+                            </li>
+                            <li class="new-object__address">
+                                “Legenda Институтского”, Санкт-Петербург,
+                                Институтский пр., 16, корпус 1, лит. А
+                            </li>
+                            <li class="new-object__description">
+                                1 комнатная квартира
+                                <div class="ellipse"></div>
+                                62 м<sup>2</sup>
+                            </li>
+                            <li
+                                class="new-object__full-description-link-container golden-frame"
+                            >
+                                <a
+                                    href="#"
+                                    class="new-object__full-description-link"
+                                    >Смотреть</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="new-objects__right-column">
+                <ul class="new-objects__list">
+                    <li class="new-object">
+                        <img
+                            src="img/new-object-2.png"
+                            alt="Новый объект"
+                            class="new-object__image"
+                        />
+                        <div class="new-object__frame"></div>
+                        <div class="new-object__company-logo-container">
+                            <img
+                                class="new-object__company-logo"
+                                src="img/gogland.svg"
+                                alt="Gogland"
+                            />
+                        </div>
+                        <ul class="new-object__info">
+                            <li class="new-object__area">
+                                ПЕТРОГРАДСКИЙ РАЙОН
+                            </li>
+                            <li class="new-object__name">
+                                Квартира на Вязова
+                            </li>
+                            <li class="new-object__address">
+                                ЖК “Привелегия”, Санкт-Петербург, Вязовая, 8
+                            </li>
+                            <li class="new-object__description">
+                                2х комнатная квартира
+                                <div class="ellipse"></div>
+                                120 м<sup>2</sup>
+                            </li>
+                            <li
+                                class="new-object__full-description-link-container golden-frame"
+                            >
+                                <a
+                                    href="#"
+                                    class="new-object__full-description-link"
+                                    >Смотреть</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="new-object">
+                        <img
+                            src="img/new-object-4.png"
+                            alt="Новый объект"
+                            class="new-object__image"
+                        />
+                        <div class="new-object__frame"></div>
+                        <div class="new-object__company-logo-container">
+                            <img
+                                class="new-object__company-logo"
+                                src="img/logo-evrostroy.svg"
+                                alt="Еврострой"
+                            />
+                        </div>
+                        <ul class="new-object__info">
+                            <li class="new-object__area">
+                                АДМИРАЛТЕЙСКИЙ РАЙОН
+                            </li>
+                            <li class="new-object__name">
+                                Идеалист
+                            </li>
+                            <li class="new-object__address">
+                                ЖК “Идеалист”, Санкт-Петербург,
+                                Малодетскосельский проспект, д. 40
+                            </li>
+                            <li class="new-object__description">
+                                2х комнатная квартира
+                                <div class="ellipse"></div>
+                                120 м<sup>2</sup>
+                            </li>
+                            <li
+                                class="new-object__full-description-link-container golden-frame"
+                            >
+                                <a
+                                    href="#"
+                                    class="new-object__full-description-link"
+                                    >Смотреть</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="reviews">
+    <div class="container">
+        <div class="reviews__inner">
+            <h2 class="reviews__header">Отзывы</h2>
+            <div class="reviews__list-container swiper-container">
+                <ul class="reviews__list swiper-wrapper">
+                    <li class="review swiper-slide">
+                        <img
+                            src="img/Ольга_Власьева.png"
+                            alt="Ольга Власьева"
+                            class="review__image"
+                        />
+                        <div class="review__text-box">
+                            <h3 class="review__header">
+                                Ольга Власьева
+                            </h3>
+                            <p class="review__content">
+                                Огромное спасибо Станиславу, настоящий
+                                профессионал своего дела! Помог с оформлением
+                                ипотеки, посоветовал банк, где на данный момент
+                                самый низкий процент, в день сделки оказалось,
+                                что не хватает одного документа, решил все
+                                вопросы с банком таким образом.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="review swiper-slide">
+                        <img
+                            src="img/Василий_Аркадьев.png"
+                            alt="Василий Аркадьев"
+                            class="review__image"
+                        />
+                        <div class="review__text-box">
+                            <h3 class="review__header">
+                                Василий Аркадьев
+                            </h3>
+                            <p class="review__content">
+                                Огромное спасибо Станиславу, настоящий
+                                профессионал своего дела! Помог с оформлением
+                                ипотеки, посоветовал банк, где на данный момент
+                                самый низкий процент, в день сделки оказалось,
+                                что не хватает одного документа, решил все
+                                вопросы с банком таким образом.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div
+                    class="reviews-pagination swiper-pagination"
+                    id="reviews-pagination"
+                ></div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="news">
+    <section class="news__left-side">
+        <h2 class="news__header">Новости</h2>
+        <img class="news__image" src="img/news.png" alt="Комплекс построек" />
+        <div class="news__date">5 декабря 2018</div>
+        <h3 class="news__headline">
+            Закрываем вопрос об открытых системах теплоснабжения
+        </h3>
+        <p class="news__content">
+            По состоянию на начало 2017 года до 70% российского жилого фонда
+            имеет открытую схему ГВС. Это значит, что для бытовых нужд
+            потребители используют ту же воду, которая циркулирует в системе
+            отопления.
+        </p>
+        <a href="#" class="news__link"
+            ><img
+                src="img/simple_arrow.svg"
+                alt="Стрелка"
+                class="news__link__arrow"
+        /></a>
+    </section>
+    <section class="news__right-side">
+        <a href="news.html" class="all-news__link"
+            >Все новости
+            <img
+                src="img/simple_arrow.svg"
+                alt="Стрелка"
+                class="all-news__link__arrow news__link__arrow"
+            />
+        </a>
+        <ul class="news__list">
+            <li class="news__list-item">
+                <span class="news__list-item__date">5 декабря 2018</span>
+                <div class="news__list-item__line"></div>
+                <a href="#" class="news__list-item__link"
+                    >Лахта-центр — <br />ход строительства</a
+                >
+            </li>
+            <li class="news__list-item">
+                <span class="news__list-item__date">5 декабря 2018</span>
+                <div class="news__list-item__line"></div>
+                <a href="#" class="news__list-item__link"
+                    >Сколько стоят ключи <br />от квартиры</a
+                >
+            </li>
+            <li class="news__list-item">
+                <span class="news__list-item__date">5 декабря 2018</span>
+                <div class="news__list-item__line"></div>
+                <a href="#" class="news__list-item__link"
+                    >Застройка от ЛСР на намывных территориях Васильевского
+                    острова</a
+                >
+            </li>
+            <li class="news__list-item">
+                <span class="news__list-item__date">5 декабря 2018</span>
+                <div class="news__list-item__line"></div>
+                <a href="#" class="news__list-item__link"
+                    >Застройка от ЛСР на намывных территориях Васильевского
+                    острова</a
+                >
+            </li>
+        </ul>
+    </section>
+</section>
+
+            <section class="coordinates">
+    <div class="container">
+        <div class="coordinates__inner">
+            <section class="coordinates__map">
+                <div class="coordinates__info-container">
+                    <div class="coordinates__info">
+                        <ul class="info__contacts-list">
+                            <li class="info__contacts-list-item">
+                                <a href="mailto:info@buro.estate" class="email"
+                                    >info@buro.estate</a
+                                >
+                            </li>
+                            <li class="info__contacts-list-item">
+                                <a href="tel:78126371000" class="phone"
+                                    >+7 (812) 637-10-00</a
+                                >
+                            </li>
+                            <li class="info__contacts-list-item">
+                                <a href="tel:79213525555" class="phone"
+                                    >+7 (921) 352-55-55</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="info__working-time">
+                            <span class="info__working-time__title"
+                                >Время работы офиса:</span
+                            >9:00–19:00 (Пн-Пт)
+                        </div>
+                        <div class="info__address">
+                            <span class="info__address__title">Адрес:</span
+                            >199004, Санкт-Петербург,<br />Набережная Макарова,
+                            д. 60
+                        </div>
+                    </div>
+                </div>
+                <img
+                    src="img/map-pointer.svg"
+                    alt="Указатель на карте"
+                    class="coordinates__map__pointer"
+                />
+            </section>
+            <section class="coordinates__form-container">
+                <div class="coordinates__form__title-box">
+                    <div class="coordinates__form__title">
+                        Остаемся на связи
+                    </div>
+                    <div class="coordinates__form__text">
+                        Ответим на ваши вопросы и предложим вам варианты
+                    </div>
+                </div>
+                <form action="submit" class="coordinates__form">
+                    <div class="coordinates__form-group">
+                        <input
+                            type="text"
+                            class="coordinates__form__input"
+                            placeholder="Имя"
+                            required
+                        />
+                        <input
+                            type="text"
+                            class="coordinates__form__input"
+                            placeholder="Телефон"
+                            required
+                        />
+                    </div>
+                    <input
+                        type="email"
+                        class="coordinates__form__input coordinates__form__email-input"
+                        placeholder="Почта"
+                        required
+                    />
+                    <input
+                        type="text"
+                        class="coordinates__form__input coordinates__form__message-input"
+                        placeholder="Ваше сообщение"
+                        required
+                    />
+                    <div class="coordinates__form-footer">
+                        <div class="coordinates__form__agree-block">
+                            <label class="agree-block__checkbox-label">
+                                <input
+                                    class="agree-block__checkbox"
+                                    type="checkbox"
+                                    name="isAgree"
+                                /><span
+                                    class="agree-block__fake-checkbox"
+                                ></span>
+                                <span class="agree-block__checkbox__label"
+                                    >Я согласен с предосталением персональных
+                                    данных</span
+                                >
+                            </label>
+                        </div>
+                        <div class="golden-frame">
+                            <button
+                                class="coordinates__form__submit-button"
+                                type="submit"
+                            >
+                                Отправить
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__nav">
+                <h5 class="footer__company-name">Бюро Недвижимости</h5>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-list-item">Главная</li>
+                    <li class="footer__nav-list-item">О нас</li>
+                    <li class="footer__nav-list-item">
+                        Каталог объектов
+                    </li>
+                    <li class="footer__nav-list-item">Новости</li>
+                    <li class="footer__nav-list-item">Отзывы</li>
+                    <li class="footer__nav-list-item">Контакты</li>
+                </ul>
+            </div>
+            <div class="footer__info">
+                <h5 class="footer__info-header">Информация</h5>
+                <ul class="footer__info-list">
+                    <li class="footer__info-list-item">Контакты</li>
+                    <li class="footer__info-list-item">FAQ</li>
+                    <li class="footer__info-list-item">
+                        Политика конфиденциальности
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <h5 class="footer__contacts-header">
+                    Позвоните или напишите
+                </h5>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-list-item">
+                        <a href="mailto:info@buro.estate" class="email"
+                            >info@buro.estate</a
+                        >
+                    </li>
+                    <li class="footer__contacts-list-item">
+                        <a href="tel:78126371000" class="phone"
+                            >+7 (812) 637-10-00</a
+                        >
+                    </li>
+                    <li class="footer__contacts-list-item">
+                        <a href="tel:79213525555" class="phone"
+                            >+7 (921) 352-55-55</a
+                        >
+                    </li>
+                </ul>
+                <ul class="footer__social-media-list">
+                    <li class="footer__social-media-list-item">
+                        <img
+                            class="footer__social-media__icon"
+                            src="/img/facebook.svg"
+                            alt="Facebook"
+                        />
+                    </li>
+                    <li class="footer__social-media-list-item">
+                        <img
+                            class="footer__social-media__icon"
+                            src="/img/vk.svg"
+                            alt="ВКонтакте"
+                        />
+                    </li>
+                    <li class="footer__social-media-list-item">
+                        <img
+                            class="footer__social-media__icon"
+                            src="/img/instagram.svg"
+                            alt="Instagram"
+                        />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__copyright">2019 © Все права защищены.</div>
+    </div>
+</footer>
+
+        <script src="./bundle.js"></script>
+    </body>
+</html>
