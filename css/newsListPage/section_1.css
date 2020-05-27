@@ -26,11 +26,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        180deg,
-        #0c466c 0%,
-        rgba(12, 70, 108, 0) 129.74%
-    );
+    background: linear-gradient( 180deg, #0c466c 0%, rgba(12, 70, 108, 0) 129.74%);
     mix-blend-mode: normal;
 }
 
@@ -60,6 +56,7 @@
 
 .event__title {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 4.722vw;
     line-height: 95%;
     letter-spacing: 0.03em;

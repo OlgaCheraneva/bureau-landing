@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+// const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 function generateHtmlPlugins(templateDir) {
     const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -52,8 +53,8 @@ const config = {
 };
 
 module.exports = (env, argv) => {
-    if (argv.mode === 'production') {
-        config.plugins.push(new CleanWebpackPlugin());
-    }
+    // if (argv.mode === 'production') {
+    //     config.plugins.push(new CleanWebpackPlugin());
+    // }
     return config;
 };

@@ -26,7 +26,8 @@
 
 .title__info-articles {
     width: 100%;
-    font-family: Beaumaris Demo;
+    font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
     font-size: 1.667vw;
     line-height: 135%;
     margin-top: 3.889vw;
@@ -78,6 +79,7 @@
 
 .date__mass-media-news {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 0.972vw;
     line-height: 95%;
     letter-spacing: 0.06em;

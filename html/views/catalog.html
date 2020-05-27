@@ -9,19 +9,25 @@
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/catalogPage/headline.css" />
-        <link rel="stylesheet" href="css/catalogPage/section_2.css" />
+        <link rel="stylesheet" href="css/catalogPage/index.css" />
+        <link rel="stylesheet" href="css/new-objects.css" />
+        <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/form-submission-window.css" />
     </head>
     <body>
+        <%= _.template(require('./../includes/modal-form.html').default)() %>
+        <%= _.template(require('./../includes/form-submission-window.html').default)() %>        
         <%= _.template(require('./../includes/header.html').default)() %>
         <main>
             <section class="headline">
                 <div class="headline__background-light-theme"></div>
-                <img
-                    class="pointer-to-left"
-                    src="img/Group 5.svg"
-                    alt="Стрелка влево"
-                    title="Стрелка влево"
-                />
+                <a href="about.html" class="pointer-to-left-wrapper">
+                    <img
+                        class="pointer-to-left"
+                        src="img/Group 5.svg"
+                        alt="Стрелка влево"
+                        title="Стрелка влево"
+                /></a>
                 <div class="catalog__title">
                     <h1 class="event__title">Наши объекты</h1>
                     <div class="line-light-theme__news"></div>
@@ -59,15 +65,24 @@
                         </div>
                     </form>
                 </div>
-                <img
-                    class="pointer-to-down"
-                    src="img/Group 11.svg"
-                    alt="Стрелка вниз"
-                    title="Стрелка вниз"
-                />
+                <a href="#new-objects" class="pointer-to-down-wrapper">
+                    <img
+                        class="pointer-to-down"
+                        src="img/Group 11.svg"
+                        alt="Стрелка вниз"
+                        title="Стрелка вниз"
+                /></a>
             </section>
-            <section></section>
+            <section class="new-objects">
+                <div class="container">
+                    <div class="new-objects__inner">
+                        <%=
+                        _.template(require('./../includes/new-objects.html').default)()%>
+                    </div>
+                </div>
+            </section>
         </main>
         <%= _.template(require('./../includes/footer.html').default)() %>
+        <script src="./bundle.js"></script>
     </body>
 </html>

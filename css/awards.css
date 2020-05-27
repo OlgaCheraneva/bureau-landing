@@ -4,6 +4,7 @@
 
 .awards__header {
     font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
     font-size: 2.917vw;
     line-height: 95%;
     letter-spacing: 0.03em;
@@ -29,6 +30,7 @@
 
 .award__signature {
     font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
     font-size: 1.25vw;
     line-height: 95%;
     text-align: center;

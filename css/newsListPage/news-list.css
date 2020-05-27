@@ -4,7 +4,7 @@
 
 .info {
     width: 65.069vw;
-    padding: 2.5vw 0 0;
+    padding: 2.5vw 0 15vw;
 }
 
 .mass-media-news {
@@ -26,7 +26,8 @@
 
 .title__info-articles {
     width: 100%;
-    font-family: Beaumaris Demo;
+    font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
     font-size: 1.667vw;
     line-height: 135%;
     margin-top: 3.889vw;
@@ -78,6 +79,7 @@
 
 .date__mass-media-news {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 0.972vw;
     line-height: 95%;
     letter-spacing: 0.06em;
@@ -112,7 +114,7 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     border: 0.035vw solid #f3c61c;
-    margin: 20px auto 30px;
+    margin: 20px auto 0;
     cursor: pointer;
 }
 
@@ -124,4 +126,16 @@
     transform: translate3d(0.208vw, 0.208vw, 0);
     content: '';
     border: 0.035vw solid #f3c61c;
+}
+
+#loading-btn, .information-articles:last-child, #loading-btn:checked~.loading-btn-label {
+    display: none;
+}
+
+#loading-btn:checked~.information-articles:last-child {
+    display: block;
+}
+
+.information-articles {
+    animation: 0.5s linear show;
 }

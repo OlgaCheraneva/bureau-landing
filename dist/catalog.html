@@ -9,20 +9,153 @@
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/catalogPage/headline.css" />
-        <link rel="stylesheet" href="css/catalogPage/section_2.css" />
+        <link rel="stylesheet" href="css/catalogPage/index.css" />
+        <link rel="stylesheet" href="css/new-objects.css" />
+        <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/form-submission-window.css" />
     </head>
     <body>
+        <div id="modal-form" class="modal-form-background">
+    <section class="modal-form-container">
+        <div class="modal-form__title-box">
+            <div class="modal-form__title">
+                Ваша заявка
+            </div>
+            <div class="modal-form__text">
+                Наши специалисты организуют просмотр квартиры и проведут сделку
+            </div>
+        </div>
+        <form class="modal-form form">
+            <div class="modal-form-group">
+                <input
+                    type="text"
+                    class="modal-form__input"
+                    placeholder="Имя"
+                    required
+                />
+                <input
+                    type="tel"
+                    class="modal-form__input phone-number-input"
+                    placeholder="Телефон"
+                    pattern="\+7 \d{3}-\d{3}-\d{2}-\d{2}"
+                    required
+                />
+            </div>
+            <input
+                type="email"
+                class="modal-form__input modal-form__email-input"
+                placeholder="Почта"
+                required
+            />
+            <input
+                type="text"
+                class="modal-form__input modal-form__message-input"
+                placeholder="Ваше сообщение"
+            />
+            <div class="modal-form-footer">
+                <div class="modal-form__agree-block">
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="subscribe"
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
+                        <span class="agree-block__checkbox__label"
+                            >Подписка на новости</span
+                        >
+                    </label>
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="isAgree"
+                            required
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
+                        <span class="agree-block__checkbox__label"
+                            >Я согласен с предосталением персональных
+                            данных</span
+                        >
+                    </label>
+                </div>
+                <div class="golden-frame">
+                    <button class="modal-form__submit-button">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </form>
+        <button class="modal-form__close-button">
+            <img
+                src="/img/x.svg"
+                alt="Закрыть"
+                class="modal-form__close-button__image"
+            />
+        </button>
+    </section>
+</div>
+
+        <div id="form-submission-window" class="form-submission-window-background">
+    <section class="form-submission-window-container">
+        <img class="form-submission-window__image" src="img/lion.svg" />
+        <div class="form-submission-window__title">
+            Заявка отправлена
+        </div>
+        <div class="form-submission-window__text">
+            Наши специалисты свяжутся с Вами в ближайшее время
+        </div>
+        <div class="golden-frame">
+            <button
+                class="form-submission-window__return-button form-submission-window__close-btn"
+            >
+                Отлично
+            </button>
+        </div>
+        <button
+            class="form-submission-window__close-button form-submission-window__close-btn"
+            ><img
+                src="/img/x.svg"
+                alt="Закрыть"
+                class="form-submission-window__close-button__image"
+        />
+    </section>
+</div>
+        
         <header class="header">
     <div class="container">
         <div class="header__inner">
-            <a href="/">
-                <img
-                    src="/img/logo_light-theme.svg"
-                    alt="Логотип"
-                    title="Логотип"
-                    class="logo"
-                />
-            </a>
+            <a href="/" class="logo"></a>
             <nav class="nav">
                 <ul class="nav__list list">
                     <li class="nav__item">
@@ -40,16 +173,16 @@
                             Новости
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item contacts">
                         <a href="/contacts.html" class="nav__link link">
                             Контакты
                         </a>
                     </li>
                     <li class="nav__item">
                         <div class="golden-frame">
-                            <a class="nav__request-button" href="#modal-form">
+                            <button class="nav__request-button">
                                 Оформить заявку
-                            </a>
+                            </button>
                         </div>
                     </li>
                 </ul>
@@ -62,12 +195,13 @@
         <main>
             <section class="headline">
                 <div class="headline__background-light-theme"></div>
-                <img
-                    class="pointer-to-left"
-                    src="img/Group 5.svg"
-                    alt="Стрелка влево"
-                    title="Стрелка влево"
-                />
+                <a href="about.html" class="pointer-to-left-wrapper">
+                    <img
+                        class="pointer-to-left"
+                        src="img/Group 5.svg"
+                        alt="Стрелка влево"
+                        title="Стрелка влево"
+                /></a>
                 <div class="catalog__title">
                     <h1 class="event__title">Наши объекты</h1>
                     <div class="line-light-theme__news"></div>
@@ -105,14 +239,185 @@
                         </div>
                     </form>
                 </div>
-                <img
-                    class="pointer-to-down"
-                    src="img/Group 11.svg"
-                    alt="Стрелка вниз"
-                    title="Стрелка вниз"
-                />
+                <a href="#new-objects" class="pointer-to-down-wrapper">
+                    <img
+                        class="pointer-to-down"
+                        src="img/Group 11.svg"
+                        alt="Стрелка вниз"
+                        title="Стрелка вниз"
+                /></a>
             </section>
-            <section></section>
+            <section class="new-objects">
+                <div class="container">
+                    <div class="new-objects__inner">
+                        <div class="new-objects__content">
+    <div class="new-objects__left-column">
+        <ul class="new-objects__list">
+            <li class="new-object">
+                <img
+                    src="img/new-object-1.png"
+                    alt="Новый объект"
+                    class="new-object__image"
+                />
+                <div class="new-object__frame"></div>
+                <div class="new-object__company-logo-container">
+                    <img
+                        class="new-object__company-logo"
+                        src="img/NORMANN.svg"
+                        alt="NORMANN"
+                    />
+                </div>
+                <ul class="new-object__info">
+                    <li class="new-object__area">
+                        ПЕТРОГРАДСКИЙ РАЙОН
+                    </li>
+                    <li class="new-object__name">
+                        Квартира на Плуталова
+                    </li>
+                    <li class="new-object__address">
+                        Санкт-Петербург, Плуталова, 13 лит. А
+                    </li>
+                    <li class="new-object__description">
+                        3х комнатная квартира
+                        <div class="ellipse"></div>
+                        385 м<sup>2</sup>
+                    </li>
+                    <li
+                        class="new-object__full-description-link-container golden-frame"
+                    >
+                        <a href="#" class="new-object__full-description-link"
+                            >Смотреть</a
+                        >
+                    </li>
+                </ul>
+            </li>
+            <li class="new-object">
+                <img
+                    src="img/new-object-3.png"
+                    alt="Новый объект"
+                    class="new-object__image"
+                />
+                <div class="new-object__frame"></div>
+                <div class="new-object__company-logo-container">
+                    <img
+                        class="new-object__company-logo"
+                        src="img/legenda.svg"
+                        alt="Legend"
+                    />
+                </div>
+                <ul class="new-object__info">
+                    <li class="new-object__area">
+                        ВЫБОРГСКИЙ РАЙОН
+                    </li>
+                    <li class="new-object__name">
+                        Legenda Институтского
+                    </li>
+                    <li class="new-object__address">
+                        “Legenda Институтского”, Санкт-Петербург, Институтский
+                        пр., 16, корпус 1, лит. А
+                    </li>
+                    <li class="new-object__description">
+                        1 комнатная квартира
+                        <div class="ellipse"></div>
+                        62 м<sup>2</sup>
+                    </li>
+                    <li
+                        class="new-object__full-description-link-container golden-frame"
+                    >
+                        <a href="#" class="new-object__full-description-link"
+                            >Смотреть</a
+                        >
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="new-objects__right-column">
+        <ul class="new-objects__list">
+            <li class="new-object">
+                <img
+                    src="img/new-object-2.png"
+                    alt="Новый объект"
+                    class="new-object__image"
+                />
+                <div class="new-object__frame"></div>
+                <div class="new-object__company-logo-container">
+                    <img
+                        class="new-object__company-logo"
+                        src="img/gogland.svg"
+                        alt="Gogland"
+                    />
+                </div>
+                <ul class="new-object__info">
+                    <li class="new-object__area">
+                        ПЕТРОГРАДСКИЙ РАЙОН
+                    </li>
+                    <li class="new-object__name">
+                        Квартира на Вязова
+                    </li>
+                    <li class="new-object__address">
+                        ЖК “Привелегия”, Санкт-Петербург, Вязовая, 8
+                    </li>
+                    <li class="new-object__description">
+                        2х комнатная квартира
+                        <div class="ellipse"></div>
+                        120 м<sup>2</sup>
+                    </li>
+                    <li
+                        class="new-object__full-description-link-container golden-frame"
+                    >
+                        <a href="#" class="new-object__full-description-link"
+                            >Смотреть</a
+                        >
+                    </li>
+                </ul>
+            </li>
+            <li class="new-object">
+                <img
+                    src="img/new-object-4.png"
+                    alt="Новый объект"
+                    class="new-object__image"
+                />
+                <div class="new-object__frame"></div>
+                <div class="new-object__company-logo-container">
+                    <img
+                        class="new-object__company-logo"
+                        src="img/logo-evrostroy.svg"
+                        alt="Еврострой"
+                    />
+                </div>
+                <ul class="new-object__info">
+                    <li class="new-object__area">
+                        АДМИРАЛТЕЙСКИЙ РАЙОН
+                    </li>
+                    <li class="new-object__name">
+                        Идеалист
+                    </li>
+                    <li class="new-object__address">
+                        ЖК “Идеалист”, Санкт-Петербург, Малодетскосельский
+                        проспект, д. 40
+                    </li>
+                    <li class="new-object__description">
+                        2х комнатная квартира
+                        <div class="ellipse"></div>
+                        120 м<sup>2</sup>
+                    </li>
+                    <li
+                        class="new-object__full-description-link-container golden-frame"
+                    >
+                        <a href="#" class="new-object__full-description-link"
+                            >Смотреть</a
+                        >
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
     <div class="container">
@@ -120,23 +425,39 @@
             <div class="footer__nav">
                 <h5 class="footer__company-name">Бюро Недвижимости</h5>
                 <ul class="footer__nav-list">
-                    <li class="footer__nav-list-item">Главная</li>
-                    <li class="footer__nav-list-item">О нас</li>
                     <li class="footer__nav-list-item">
-                        Каталог объектов
+                        <a href="/">Главная</a>
                     </li>
-                    <li class="footer__nav-list-item">Новости</li>
-                    <li class="footer__nav-list-item">Отзывы</li>
-                    <li class="footer__nav-list-item">Контакты</li>
+                    <li class="footer__nav-list-item">
+                        <a href="/about.html">О нас</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/catalog.html">
+                            Каталог объектов
+                        </a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/news-list.html">Новости</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/reviews.html">Отзывы</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/contacts.html">Контакты</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer__info">
                 <h5 class="footer__info-header">Информация</h5>
                 <ul class="footer__info-list">
-                    <li class="footer__info-list-item">Контакты</li>
-                    <li class="footer__info-list-item">FAQ</li>
                     <li class="footer__info-list-item">
-                        Политика конфиденциальности
+                        <a href="/contacts.html">Контакты</a>
+                    </li>
+                    <li class="footer__info-list-item"><a href="/">FAQ</a></li>
+                    <li class="footer__info-list-item">
+                        <a href="/">
+                            Политика конфиденциальности
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -163,33 +484,37 @@
                 </ul>
                 <ul class="footer__social-media-list">
                     <li class="footer__social-media-list-item">
-                        <img
-                            class="footer__social-media__icon"
-                            src="/img/facebook.svg"
-                            alt="Facebook"
-                        />
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/facebook.svg"
+                                alt="Facebook"
+                        /></a>
                     </li>
                     <li class="footer__social-media-list-item">
-                        <img
-                            class="footer__social-media__icon"
-                            src="/img/vk.svg"
-                            alt="ВКонтакте"
-                        />
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/vk.svg"
+                                alt="ВКонтакте"
+                        /></a>
                     </li>
                     <li class="footer__social-media-list-item">
-                        <img
-                            class="footer__social-media__icon"
-                            src="/img/instagram.svg"
-                            alt="Instagram"
-                        />
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/instagram.svg"
+                                alt="Instagram"
+                        /></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="footer__line"></div>
+        <div class="line"></div>
         <div class="footer__copyright">2019 © Все права защищены.</div>
     </div>
 </footer>
 
+        <script src="./bundle.js"></script>
     </body>
 </html>

@@ -8,6 +8,7 @@
 
 .reviews__header {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 3.611vw;
     line-height: 95%;
     letter-spacing: 0.03em;
@@ -63,6 +64,7 @@
     border: 0.069vw solid #F3C61C;
     border-radius: 50%;
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 0.972vw;
     line-height: 1.7vw;
     letter-spacing: 0.06em;
@@ -73,15 +75,20 @@
 }
 
 .review__image {
-    object-fit: contain;
+    width: 16.667vw;
+    height: 18.056vw;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .review__text-box {
+    background: #fff;
     padding: 2.014vw 3.611vw 2.083vw 2.431vw;
 }
 
 .review__header {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 1.667vw;
     line-height: 115%;
     letter-spacing: 0.03em;

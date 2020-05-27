@@ -48,44 +48,69 @@
                         Ответим на ваши вопросы и предложим вам варианты
                     </div>
                 </div>
-                <form action="submit" class="coordinates__form">
+                <form class="coordinates__form form">
                     <div class="coordinates__form-group">
                         <input
+                            id="name"
                             type="text"
                             class="coordinates__form__input"
                             placeholder="Имя"
                             required
                         />
                         <input
-                            type="text"
-                            class="coordinates__form__input"
+                            id="tel"
+                            type="tel"
+                            class="coordinates__form__input phone-number-input"
                             placeholder="Телефон"
+                            pattern="\+7 \d{3}-\d{3}-\d{2}-\d{2}"
                             required
                         />
                     </div>
                     <input
+                        id="email"
                         type="email"
                         class="coordinates__form__input coordinates__form__email-input"
                         placeholder="Почта"
                         required
                     />
                     <input
+                        id="message"
                         type="text"
                         class="coordinates__form__input coordinates__form__message-input"
                         placeholder="Ваше сообщение"
-                        required
                     />
                     <div class="coordinates__form-footer">
                         <div class="coordinates__form__agree-block">
-                            <label class="agree-block__checkbox-label">
+                            <label
+                                class="coordinates__form__agree-block__checkbox-label"
+                            >
                                 <input
-                                    class="agree-block__checkbox"
+                                    class="coordinates__form__agree-block__checkbox"
                                     type="checkbox"
                                     name="isAgree"
+                                    required
                                 /><span
-                                    class="agree-block__fake-checkbox"
-                                ></span>
-                                <span class="agree-block__checkbox__label"
+                                    class="coordinates__form__agree-block__fake-checkbox"
+                                >
+                                    <svg
+                                        class="coordinates__form__agree-block__fake-checkbox__img"
+                                        width="28"
+                                        height="20"
+                                        viewBox="0 0 28 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M2 10.5L10 18.5L26.5 2"
+                                            stroke="#F3C61C"
+                                            stroke-width="2"
+                                            stroke-linecap="square"
+                                        />
+                                    </svg>
+                                </span>
+                                <span
+                                    id="agreement"
+                                    class="coordinates__form__agree-block__checkbox__label"
                                     >Я согласен с предосталением персональных
                                     данных</span
                                 >
@@ -93,6 +118,7 @@
                         </div>
                         <div class="golden-frame">
                             <button
+                                id="btn-submit"
                                 class="coordinates__form__submit-button"
                                 type="submit"
                             >

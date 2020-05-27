@@ -3,8 +3,7 @@
     margin: 13vw 0;
 }
 
-.advantages::before,
-.advantages::after {
+.advantages::before, .advantages::after {
     content: '';
     width: 100%;
     height: 140%;
@@ -26,6 +25,7 @@
 
 .advantages__header {
     font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
     font-size: 3.611vw;
     line-height: 95%;
     letter-spacing: 0.03em;
@@ -56,6 +56,7 @@
 
 .item__header {
     font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
     font-size: 1.667vw;
     line-height: 115%;
     letter-spacing: 0.03em;

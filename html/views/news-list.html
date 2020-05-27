@@ -10,20 +10,23 @@
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/newsListPage/headline.css" />
         <link rel="stylesheet" href="css/newsListPage/news-list.css" />
+        <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/form-submission-window.css" />
     </head>
     <body>
+        <%= _.template(require('./../includes/modal-form.html').default)() %>
+        <%= _.template(require('./../includes/form-submission-window.html').default)() %>        
         <%= _.template(require('./../includes/header.html').default)() %>
         <main>
             <% var data = { description: "События", text: "Узнайте больше о" +
             "нашем развитии, мероприятиях, новых партнерах, идеях и проектах.",
             img: {src:"image 4.png", alt: "Объект", title: "Объект"} }; %>
-
-            <!-- dd -->
             <%=
             _.template(require('./../includes/headline.html').default)(data)%>
-            <%=
-            _.template(require('./../includes/news-list.html').default)(data)%>
+            <div id="second-page-block"><%=
+            _.template(require('./../includes/news-list.html').default)(data)%></div>
         </main>
         <%= _.template(require('./../includes/footer.html').default)() %>
+        <script src="./bundle.js"></script>
     </body>
 </html>

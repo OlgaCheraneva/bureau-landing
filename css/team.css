@@ -1,0 +1,68 @@
+.team {
+    margin-top: -11.3vw;
+}
+
+.team__header {
+    font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
+    font-size: 2.917vw;
+    line-height: 95%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    margin-bottom: 4.514vw;
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    padding: 0 3vw 4.653vw;
+}
+
+.team-member__photo-container {
+    position: relative;
+}
+
+.team-member:nth-child(2n + 1) .team-member__photo-container::after {
+    content: '';
+    position: absolute;
+    top: -0.972vw;
+    left: -0.972vw;
+    right: 0.972vw;
+    bottom: 0.972vw;
+    border: 0.069vw solid #F3C61C;
+}
+
+.team-member:nth-child(2n) .team-member__photo-container::after {
+    content: '';
+    position: absolute;
+    top: 0.972vw;
+    left: 0.972vw;
+    right: -0.972vw;
+    bottom: -0.972vw;
+    border: 0.069vw solid #F3C61C;
+}
+
+.team-member__photo {
+    width: 13.194vw;
+    height: 16.042vw;
+}
+
+.team-member__name {
+    padding: 1.25vw 0 0.694vw;
+    font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 95%;
+    letter-spacing: 0.03em;
+    color: #F3C61C;
+}
+
+.team-member__position {
+    font-size: 0.833vw;
+    line-height: 168.2%;
+    letter-spacing: 0.06em;
+    color: #333;
+}

@@ -1,0 +1,9 @@
+.header {
+    background: #1E1E1C;
+    box-sizing: content-box;
+    padding-bottom: 1.3vw;
+}
+
+main {
+    margin-top: 0 !important
+}

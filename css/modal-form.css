@@ -15,11 +15,6 @@
     align-items: center;
 }
 
-.modal-form-background:target {
-    opacity: 1;
-    pointer-events: auto;
-}
-
 .modal-form-container {
     width: 44.583vw;
     height: 47.5vw;
@@ -40,6 +35,7 @@
 
 .modal-form__text {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 1.667vw;
     line-height: 115%;
     letter-spacing: 0.03em;
@@ -102,16 +98,31 @@
 }
 
 .agree-block__checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.agree-block__fake-checkbox__img {
     display: none;
+}
+
+.agree-block__checkbox:checked~.agree-block__fake-checkbox svg {
+    display: block;
+    position: relative;
+    bottom: 0.25vw;
+    color: #f3c61c;
+    width: 1.702vw;
+    height: 1.146vw;
 }
 
 .agree-block__fake-checkbox {
     width: 1.458vw;
     height: 1.458vw;
-    border: 0.069vw solid #c4c4c4;
     position: relative;
     margin-right: 0.972vw;
     display: block;
+    border: 0.069vw solid #c4c4c4;
+    flex-shrink: 0;
 }
 
 .agree-block__checkbox__label {
@@ -129,21 +140,22 @@
     text-align: center;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #F3C61C;
+    color: #f3c61c;
     padding: 1.25vw 2.708vw 0.764vw 2.917vw;
+    outline: none;
 }
 
 .modal-form .golden-frame {
     z-index: 1;
 }
 
-.modal-frame__close-button {
+.modal-form__close-button {
     position: absolute;
     top: 2.083vw;
     right: 2.083vw;
 }
 
-.modal-frame__close-button, .modal-frame__close-button__image {
+.modal-form__close-button, .modal-form__close-button__image {
     width: 1.597vw;
     height: 1.597vw;
 }

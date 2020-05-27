@@ -10,19 +10,151 @@
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/newsListPage/headline.css" />
         <link rel="stylesheet" href="css/newsListPage/news-list.css" />
+        <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/form-submission-window.css" />
     </head>
     <body>
+        <div id="modal-form" class="modal-form-background">
+    <section class="modal-form-container">
+        <div class="modal-form__title-box">
+            <div class="modal-form__title">
+                Ваша заявка
+            </div>
+            <div class="modal-form__text">
+                Наши специалисты организуют просмотр квартиры и проведут сделку
+            </div>
+        </div>
+        <form class="modal-form form">
+            <div class="modal-form-group">
+                <input
+                    type="text"
+                    class="modal-form__input"
+                    placeholder="Имя"
+                    required
+                />
+                <input
+                    type="tel"
+                    class="modal-form__input phone-number-input"
+                    placeholder="Телефон"
+                    pattern="\+7 \d{3}-\d{3}-\d{2}-\d{2}"
+                    required
+                />
+            </div>
+            <input
+                type="email"
+                class="modal-form__input modal-form__email-input"
+                placeholder="Почта"
+                required
+            />
+            <input
+                type="text"
+                class="modal-form__input modal-form__message-input"
+                placeholder="Ваше сообщение"
+            />
+            <div class="modal-form-footer">
+                <div class="modal-form__agree-block">
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="subscribe"
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
+                        <span class="agree-block__checkbox__label"
+                            >Подписка на новости</span
+                        >
+                    </label>
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="isAgree"
+                            required
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
+                        <span class="agree-block__checkbox__label"
+                            >Я согласен с предосталением персональных
+                            данных</span
+                        >
+                    </label>
+                </div>
+                <div class="golden-frame">
+                    <button class="modal-form__submit-button">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </form>
+        <button class="modal-form__close-button">
+            <img
+                src="/img/x.svg"
+                alt="Закрыть"
+                class="modal-form__close-button__image"
+            />
+        </button>
+    </section>
+</div>
+
+        <div id="form-submission-window" class="form-submission-window-background">
+    <section class="form-submission-window-container">
+        <img class="form-submission-window__image" src="img/lion.svg" />
+        <div class="form-submission-window__title">
+            Заявка отправлена
+        </div>
+        <div class="form-submission-window__text">
+            Наши специалисты свяжутся с Вами в ближайшее время
+        </div>
+        <div class="golden-frame">
+            <button
+                class="form-submission-window__return-button form-submission-window__close-btn"
+            >
+                Отлично
+            </button>
+        </div>
+        <button
+            class="form-submission-window__close-button form-submission-window__close-btn"
+            ><img
+                src="/img/x.svg"
+                alt="Закрыть"
+                class="form-submission-window__close-button__image"
+        />
+    </section>
+</div>
+        
         <header class="header">
     <div class="container">
         <div class="header__inner">
-            <a href="/">
-                <img
-                    src="/img/logo_light-theme.svg"
-                    alt="Логотип"
-                    title="Логотип"
-                    class="logo"
-                />
-            </a>
+            <a href="/" class="logo"></a>
             <nav class="nav">
                 <ul class="nav__list list">
                     <li class="nav__item">
@@ -40,16 +172,16 @@
                             Новости
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item contacts">
                         <a href="/contacts.html" class="nav__link link">
                             Контакты
                         </a>
                     </li>
                     <li class="nav__item">
                         <div class="golden-frame">
-                            <a class="nav__request-button" href="#modal-form">
+                            <button class="nav__request-button">
                                 Оформить заявку
-                            </a>
+                            </button>
                         </div>
                     </li>
                 </ul>
@@ -61,8 +193,6 @@
 
         <main>
             
-
-            <!-- dd -->
             <section class="headline">
     <div class="background-light-theme"></div>
     <img
@@ -73,20 +203,21 @@
     />
     <div class="event-news">
         <h1 class="event__title">События</h1>
-        <div class="line-light-theme__news"></div>
-        <a href="/" class="event__text">Узнайте больше онашем развитии, мероприятиях, новых партнерах, идеях и проектах.
-        </a>
+        <div class="line"></div>
+        <div href="/" class="event__text">Узнайте больше онашем развитии, мероприятиях, новых партнерах, идеях и проектах.
+        </div>
     </div>
-    <img
-        class="pointer-to-down"
-        src="/img/Group 11.svg"
-        alt="Стрелка вниз"
-        title="Стрелка вниз"
-    />
+    <a href="#second-page-block" class="pointer-to-down-wrapper">
+        <img
+            class="pointer-to-down"
+            src="/img/Group 11.svg"
+            alt="Стрелка вниз"
+            title="Стрелка вниз"
+    /></a>
     <img src="/img/image 4.png" class="headline__image" alt=Объект title=Объект></img>
 </section>
 
-            <section class="news-list">
+            <div id="second-page-block"><section class="news-list">
     <section class="info">
         <div class="container">
             <section class="information-articles">
@@ -96,7 +227,7 @@
                     alt="Дом"
                     title="Дом"
                 />
-                <a href="/">
+                <a href="news.html">
                     <h2 class="title__info-articles">
                         Чем отличаются апартаменты от квартиры?
                     </h2>
@@ -106,12 +237,14 @@
                     в чем разница? Под «апартаментами» не всегда подразумевают
                     элитное жилье. Сейчас объясним детали.
                 </p>
-                <img
-                    class="pointer-to-right"
-                    src="img/Group 5.svg"
-                    alt="Стрелка вправо"
-                    title="Стрелка вправо"
-                />
+                <a href="news.html">
+                    <img
+                        class="pointer-to-right"
+                        src="img/Group 5.svg"
+                        alt="Стрелка вправо"
+                        title="Стрелка вправо"
+                    />
+                </a>
             </section>
             <section class="information-articles">
                 <img
@@ -120,7 +253,7 @@
                     alt="Дом"
                     title="Дом"
                 />
-                <a href="/">
+                <a href="news.html">
                     <h2 class="title__info-articles">
                         Регистрации прав на недвижимость на основании
                         нотариально удостоверенных документов
@@ -132,12 +265,14 @@
                     сделок) и иных совершенных нотариусом нотариальных действий
                     также увеличилось на 42,5%.
                 </p>
-                <img
-                    class="pointer-to-right"
-                    src="img/Group 5.svg"
-                    alt="Стрелка вправо"
-                    title="Стрелка вправо"
-                />
+                <a href="news.html">
+                    <img
+                        class="pointer-to-right"
+                        src="img/Group 5.svg"
+                        alt="Стрелка вправо"
+                        title="Стрелка вправо"
+                    />
+                </a>
             </section>
             <section class="information-articles">
                 <img
@@ -146,7 +281,7 @@
                     alt="Дом"
                     title="Дом"
                 />
-                <a href="/">
+                <a href="news.html">
                     <h2 class="title__info-articles">
                         Закрываем вопрос об открытых системах теплоснабжения
                     </h2>
@@ -157,14 +292,46 @@
                     нужд потребители используют ту же воду, которая циркулирует
                     в системе отопления.
                 </p>
-                <img
-                    class="pointer-to-right"
-                    src="img/Group 5.svg"
-                    alt="Стрелка вправо"
-                    title="Стрелка вправо"
-                />
+                <a href="news.html">
+                    <img
+                        class="pointer-to-right"
+                        src="img/Group 5.svg"
+                        alt="Стрелка вправо"
+                        title="Стрелка вправо"
+                    />
+                </a>
             </section>
-            <div class="load-more">ЗАГРУЗИТЬ ЕЩЕ</div>
+            <input type="checkbox" id="loading-btn" />
+            <label for="loading-btn" class="loading-btn-label load-more"
+                >ЗАГРУЗИТЬ ЕЩЕ</label
+            >
+            <section class="information-articles">
+                <img
+                    class="image__info-articles"
+                    src="img/image 2.png"
+                    alt="Дом"
+                    title="Дом"
+                />
+                <a href="news.html">
+                    <h2 class="title__info-articles">
+                        Закрываем вопрос об открытых системах теплоснабжения
+                    </h2>
+                </a>
+                <p class="description__info-articles">
+                    По состоянию на начало 2017 года до 70% российского жилого
+                    фонда имеет открытую схему ГВС. Это значит, что для бытовых
+                    нужд потребители используют ту же воду, которая циркулирует
+                    в системе отопления.
+                </p>
+                <a href="news.html">
+                    <img
+                        class="pointer-to-right"
+                        src="img/Group 5.svg"
+                        alt="Стрелка вправо"
+                        title="Стрелка вправо"
+                    />
+                </a>
+            </section>
         </div>
     </section>
     <section class="mass-media-news">
@@ -239,7 +406,7 @@
         </ul>
     </section>
 </section>
-
+</div>
         </main>
         <footer class="footer">
     <div class="container">
@@ -247,23 +414,39 @@
             <div class="footer__nav">
                 <h5 class="footer__company-name">Бюро Недвижимости</h5>
                 <ul class="footer__nav-list">
-                    <li class="footer__nav-list-item">Главная</li>
-                    <li class="footer__nav-list-item">О нас</li>
                     <li class="footer__nav-list-item">
-                        Каталог объектов
+                        <a href="/">Главная</a>
                     </li>
-                    <li class="footer__nav-list-item">Новости</li>
-                    <li class="footer__nav-list-item">Отзывы</li>
-                    <li class="footer__nav-list-item">Контакты</li>
+                    <li class="footer__nav-list-item">
+                        <a href="/about.html">О нас</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/catalog.html">
+                            Каталог объектов
+                        </a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/news-list.html">Новости</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/reviews.html">Отзывы</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/contacts.html">Контакты</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer__info">
                 <h5 class="footer__info-header">Информация</h5>
                 <ul class="footer__info-list">
-                    <li class="footer__info-list-item">Контакты</li>
-                    <li class="footer__info-list-item">FAQ</li>
                     <li class="footer__info-list-item">
-                        Политика конфиденциальности
+                        <a href="/contacts.html">Контакты</a>
+                    </li>
+                    <li class="footer__info-list-item"><a href="/">FAQ</a></li>
+                    <li class="footer__info-list-item">
+                        <a href="/">
+                            Политика конфиденциальности
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -290,33 +473,37 @@
                 </ul>
                 <ul class="footer__social-media-list">
                     <li class="footer__social-media-list-item">
-                        <img
-                            class="footer__social-media__icon"
-                            src="/img/facebook.svg"
-                            alt="Facebook"
-                        />
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/facebook.svg"
+                                alt="Facebook"
+                        /></a>
                     </li>
                     <li class="footer__social-media-list-item">
-                        <img
-                            class="footer__social-media__icon"
-                            src="/img/vk.svg"
-                            alt="ВКонтакте"
-                        />
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/vk.svg"
+                                alt="ВКонтакте"
+                        /></a>
                     </li>
                     <li class="footer__social-media-list-item">
-                        <img
-                            class="footer__social-media__icon"
-                            src="/img/instagram.svg"
-                            alt="Instagram"
-                        />
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/instagram.svg"
+                                alt="Instagram"
+                        /></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="footer__line"></div>
+        <div class="line"></div>
         <div class="footer__copyright">2019 © Все права защищены.</div>
     </div>
 </footer>
 
+        <script src="./bundle.js"></script>
     </body>
 </html>

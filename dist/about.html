@@ -8,21 +8,161 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/catalogPage/headline.css" />
-        <link rel="stylesheet" href="css/catalogPage/section_2.css" />
+        <link rel="stylesheet" href="css/aboutPage/index.css">
+        <link rel="stylesheet" href="css/newsListPage/headline.css" />
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/advantages.css" />
+        <link rel="stylesheet" href="css/team.css" />
+        <link rel="stylesheet" href="css/awards.css" />
+        <link rel="stylesheet" href="css/mission.css" />
+        <link rel="stylesheet" href="css/reviews.css" />
+        <link rel="stylesheet" href="css/partners.css" />
+        <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/form-submission-window.css" />
+        <link rel="stylesheet" href="css/swiper.min.css" />
     </head>
     <body>
+        <div id="modal-form" class="modal-form-background">
+    <section class="modal-form-container">
+        <div class="modal-form__title-box">
+            <div class="modal-form__title">
+                Ваша заявка
+            </div>
+            <div class="modal-form__text">
+                Наши специалисты организуют просмотр квартиры и проведут сделку
+            </div>
+        </div>
+        <form class="modal-form form">
+            <div class="modal-form-group">
+                <input
+                    type="text"
+                    class="modal-form__input"
+                    placeholder="Имя"
+                    required
+                />
+                <input
+                    type="tel"
+                    class="modal-form__input phone-number-input"
+                    placeholder="Телефон"
+                    pattern="\+7 \d{3}-\d{3}-\d{2}-\d{2}"
+                    required
+                />
+            </div>
+            <input
+                type="email"
+                class="modal-form__input modal-form__email-input"
+                placeholder="Почта"
+                required
+            />
+            <input
+                type="text"
+                class="modal-form__input modal-form__message-input"
+                placeholder="Ваше сообщение"
+            />
+            <div class="modal-form-footer">
+                <div class="modal-form__agree-block">
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="subscribe"
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
+                        <span class="agree-block__checkbox__label"
+                            >Подписка на новости</span
+                        >
+                    </label>
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="isAgree"
+                            required
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
+                        <span class="agree-block__checkbox__label"
+                            >Я согласен с предосталением персональных
+                            данных</span
+                        >
+                    </label>
+                </div>
+                <div class="golden-frame">
+                    <button class="modal-form__submit-button">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </form>
+        <button class="modal-form__close-button">
+            <img
+                src="/img/x.svg"
+                alt="Закрыть"
+                class="modal-form__close-button__image"
+            />
+        </button>
+    </section>
+</div>
+
+        <div id="form-submission-window" class="form-submission-window-background">
+    <section class="form-submission-window-container">
+        <img class="form-submission-window__image" src="img/lion.svg" />
+        <div class="form-submission-window__title">
+            Заявка отправлена
+        </div>
+        <div class="form-submission-window__text">
+            Наши специалисты свяжутся с Вами в ближайшее время
+        </div>
+        <div class="golden-frame">
+            <button
+                class="form-submission-window__return-button form-submission-window__close-btn"
+            >
+                Отлично
+            </button>
+        </div>
+        <button
+            class="form-submission-window__close-button form-submission-window__close-btn"
+            ><img
+                src="/img/x.svg"
+                alt="Закрыть"
+                class="form-submission-window__close-button__image"
+        />
+    </section>
+</div>
+
         <header class="header">
     <div class="container">
         <div class="header__inner">
-            <a href="/">
-                <img
-                    src="/img/logo_light-theme.svg"
-                    alt="Логотип"
-                    title="Логотип"
-                    class="logo"
-                />
-            </a>
+            <a href="/" class="logo"></a>
             <nav class="nav">
                 <ul class="nav__list list">
                     <li class="nav__item">
@@ -40,16 +180,16 @@
                             Новости
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item contacts">
                         <a href="/contacts.html" class="nav__link link">
                             Контакты
                         </a>
                     </li>
                     <li class="nav__item">
                         <div class="golden-frame">
-                            <a class="nav__request-button" href="#modal-form">
+                            <button class="nav__request-button">
                                 Оформить заявку
-                            </a>
+                            </button>
                         </div>
                     </li>
                 </ul>
@@ -60,59 +200,510 @@
 </header>
 
         <main>
+            
             <section class="headline">
-                <div class="headline__background-light-theme"></div>
-                <img
-                    class="pointer-to-left"
-                    src="img/Group 5.svg"
-                    alt="Стрелка влево"
-                    title="Стрелка влево"
-                />
-                <div class="catalog__title">
-                    <h1 class="event__title">Наши объекты</h1>
-                    <div class="line-light-theme__news"></div>
-                    <form class="search-bar">
-                        <div class="area-input-wrapper">
-                            <select class="area search-bar__input">
-                                <option>Район</option>
-                            </select>
-                            <img
-                                class="geo"
-                                src="img/geo.png"
-                                alt="Район"
-                                title="Район"
-                            />
-                        </div>
-                        <input
-                            type="text"
-                            class="search-bar__input"
-                            placeholder="1к. кв."
+    <div class="background-light-theme"></div>
+    <img
+        class="/pointer-to-left"
+        src="/img/Group 5.svg"
+        alt="Стрелка влево"
+        title="Стрелка влево"
+    />
+    <div class="event-news">
+        <h1 class="event__title">О компании</h1>
+        <div class="line"></div>
+        <div href="/" class="event__text">Узнайте больше онашем развитии, мероприятиях, новых партнерах, идеях и проектах.
+        </div>
+    </div>
+    <a href="#second-page-block" class="pointer-to-down-wrapper">
+        <img
+            class="pointer-to-down"
+            src="/img/Group 11.svg"
+            alt="Стрелка вниз"
+            title="Стрелка вниз"
+    /></a>
+    <img src="/img/image 8.png" class="headline__image" alt=Коллеги title=Коллеги></img>
+</section>
+
+            <div class="indentation-block"></div>
+            <div id="second-page-block"><section class="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__photo-container">
+                <div class="photo__background">
+                    <div class="frame">
+                        <img
+                            class="photo"
+                            src="/img/larisa.png"
+                            alt="Фото сотрудника"
                         />
-                        <input
-                            type="text"
-                            class="search-bar__input"
-                            placeholder="Метраж"
-                        />
-                        <input
-                            type="text"
-                            class="search-bar__input"
-                            placeholder="Сортировать"
-                        />
-                        <div class="golden-frame golden-frame__background">
-                            <button class="catalog__search-button">
-                                Смотреть
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
+            </div>
+            <div class="about__text-container">
                 <img
-                    class="pointer-to-down"
-                    src="img/Group 11.svg"
-                    alt="Стрелка вниз"
-                    title="Стрелка вниз"
+                    class="opening-quotes"
+                    src="/img/quotes.svg"
+                    alt="Кавычки"
                 />
-            </section>
-            <section></section>
+                <h2 class="about__header">Кто мы?</h2>
+                <div class="line"></div>
+                <p class="about__text">
+                    Выражение «Мой дом – моя крепость» имеет в современных
+                    реалиях несколько отличающийся от первоначального смысл.
+                    Каждому из нас присуще желание возвращаться из бурлящего
+                    водоворота повседневных хлопот, нескончаемой вереницы
+                    деловых встреч, решения производственных и бизнесовых
+                    вопросов в уютную пристань родного дома, где можно набраться
+                    сил, отвлечься от рутинной суеты в обстановке комфорта,
+                    покоя, наслаждения от окружающей изысканности.
+                    <img
+                        class="closing-quotes"
+                        src="/img/quotes.svg"
+                        alt="Кавычки"
+                    />
+                </p>
+            </div>
+        </div>
+        <img src="/img/signature.png" alt="Подпись" class="signature" />
+    </div>
+</section>
+</div> <section class="advantages">
+    <div class="container">
+        <div class="advantages__inner">
+            <h1 class="advantages__header">Почему мы</h1>
+            <div class="advantages__row">
+                <div class="advantages__item advantages__item-1">
+                    <div class="advantages__icon-container">
+                        <img
+                            src="/img/bulb.svg"
+                            alt="Лампа"
+                            class="advantages__icon"
+                        />
+                    </div>
+                    <div class="wrapper">
+                        <h4 class="item__header">
+                            Ломаем стереотипы
+                        </h4>
+                        <p class="advantages__text">
+                            Мы применяем все мыслимые способы реализации,
+                            включая креативную рекламу, работу по повышению
+                            лояльности нашей целевой аудитории.
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__item advantages__item-2">
+                    <div class="advantages__icon-container">
+                        <img
+                            src="/img/handshake.svg"
+                            alt="Рукопожатие"
+                            class="advantages__icon"
+                        />
+                    </div>
+                    <div class="wrapper">
+                        <h4 class="item__header">
+                            Сотрудничество со Сбербанком и другими банками
+                        </h4>
+                        <p class="advantages__text">
+                            Это позволяет получать преференции и добиваться
+                            одобрения ипотеки для клиентов в 9 из 10 случаях.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__row">
+                <div class="advantages__item advantages__item-3">
+                    <div class="advantages__icon-container">
+                        <img
+                            src="/img/lock.svg"
+                            alt="Замок"
+                            class="advantages__icon"
+                        />
+                    </div>
+                    <div class="wrapper">
+                        <h4 class="item__header">
+                            Безопасность и гарантия сделки
+                        </h4>
+                        <p class="advantages__text">
+                            В защите интересов наших клиентов, наших партнеров,
+                            честных людей, которые нам доверяют, мы пойдем до
+                            конца.
+                        </p>
+                    </div>
+                </div>
+                <div class="advantages__item advantages__item-4">
+                    <div class="advantages__icon-container">
+                        <img
+                            src="/img/suitcase.svg"
+                            alt="Портфель"
+                            class="advantages__icon"
+                        />
+                    </div>
+                    <div class="wrapper">
+                        <h4 class="item__header">
+                            Юридическое сопровождение сделки
+                        </h4>
+                        <p class="advantages__text">
+                            Оформление документов по доверенности. Возможно
+                            быстрое заключение сделок одним днем.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="team">
+    <div class="container">
+        <div class="team__inner">
+            <h3 class="team__header">Команда</h3>
+            <ul class="team__list">
+                <li class="team-member">
+                    <div class="team-member__photo-container">
+                        <img
+                            src="/img/1b5f938de01f401b2499e400720286df.png"
+                            alt="Екатерина Васильева"
+                            class="team-member__photo"
+                        />
+                    </div>
+                    <div class="team-member__name">Екатерина Васильева</div>
+                    <div class="team-member__position">
+                        Директор по развитию
+                    </div>
+                </li>
+                <li class="team-member">
+                    <div class="team-member__photo-container">
+                        <img
+                            src="/img/4d61fceba507bf557c3226ca16ccd3c7.png"
+                            alt="Инна Чудакова"
+                            class="team-member__photo"
+                        />
+                    </div>
+                    <div class="team-member__name">Инна Чудакова</div>
+                    <div class="team-member__position">
+                        PR-директор
+                    </div>
+                </li>
+                <li class="team-member">
+                    <div class="team-member__photo-container">
+                        <img
+                            src="/img/98d18b2d1c3f38f664190cc870c15922.png"
+                            alt="Евгений Павлов"
+                            class="team-member__photo"
+                        />
+                    </div>
+                    <div class="team-member__name">Евгений Павлов</div>
+                    <div class="team-member__position">
+                        Финансовый директор
+                    </div>
+                </li>
+                <li class="team-member">
+                    <div class="team-member__photo-container">
+                        <img
+                            src="/img/d7b92a8d9e11441815daeed5d8835a46.png"
+                            alt="Анна Строгина"
+                            class="team-member__photo"
+                        />
+                    </div>
+                    <div class="team-member__name">Анна Строгина</div>
+                    <div class="team-member__position">
+                        Коммерческий директор
+                    </div>
+                </li>
+                <li class="team-member">
+                    <div class="team-member__photo-container">
+                        <img
+                            src="/img/d385821f4f841ecab65cfd990ed7ae98.png"
+                            alt="Мария Иванова"
+                            class="team-member__photo"
+                        />
+                    </div>
+                    <div class="team-member__name">Мария Иванова</div>
+                    <div class="team-member__position">
+                        Агент
+                    </div>
+                </li>
+                <li class="team-member">
+                    <div class="team-member__photo-container">
+                        <img
+                            src="/img/dsc_2372-kopiya.png"
+                            alt="Василиса Лобода"
+                            class="team-member__photo"
+                        />
+                    </div>
+                    <div class="team-member__name">Василиса Лобода</div>
+                    <div class="team-member__position">
+                        Агент
+                    </div>
+                </li>
+                <li class="team-member">
+                    <div class="team-member__photo-container">
+                        <img
+                            src="/img/dsc_2495-kopiya.png"
+                            alt="Ирина Пегас"
+                            class="team-member__photo"
+                        />
+                    </div>
+                    <div class="team-member__name">Ирина Пегас</div>
+                    <div class="team-member__position">
+                        Агент
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="awards">
+    <div class="container">
+        <div class="awards__inner">
+            <h3 class="awards__header">Наши награды</h3>
+            <ul class="awards__list">
+                <li class="award">
+                    <img
+                        src="/img/award_ndv_1.png"
+                        alt="Премия “Народная марка”"
+                        class="award__image"
+                    />
+                    <div class="award__signature">
+                        Премия “Народная марка”
+                    </div>
+                </li>
+                <li class="award">
+                    <img
+                        src="/img/award_ndv_3.png"
+                        alt="Премия “Народная марка”"
+                        class="award__image"
+                    />
+                    <div class="award__signature">
+                        Премия “Народная марка”
+                    </div>
+                </li>
+                <li class="award">
+                    <img
+                        src="/img/award_ndv_4.png"
+                        alt="Премия “Народная марка”"
+                        class="award__image"
+                    />
+                    <div class="award__signature">
+                        Премия “Народная марка”
+                    </div>
+                </li>
+                <li class="award">
+                    <img
+                        src="/img/award_ndv_7.png"
+                        alt="Премия “Народная марка”"
+                        class="award__image"
+                    />
+                    <div class="award__signature">
+                        Премия “Народная марка”
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="mission">
+    <div class="container">
+        <div class="mission__inner">
+            <div class="mission__inner-block mission__inner-block_first">
+                <h3 class="mission__header">Миссия</h3>
+                <div class="line"></div>
+                <div class="mission__text">
+                    <p
+                        class="mission__text-paragraph mission__text-paragraph_first"
+                    >
+                        Решая задачу, поставленную перед нами клиентом или
+                        партнером, мы берем на себя часть ответственности за его
+                        благополучие и комфорт, за успешность бизнеса, за
+                        дальнейшее процветание.
+                    </p>
+                    <p
+                        class="mission__text-paragraph mission__text-paragraph_second"
+                    >
+                        Разделяя ответственность, мы гарантируем результат. Нам
+                        доверяют свое время самые занятые люди страны. Наша
+                        работа помогает им приумножить капитал. Наша миссия —
+                        поставить недвижимость на службу людям.
+                    </p>
+                </div>
+            </div>
+            <div class="mission__inner-block mission__inner-block_second">
+                <img class="mission__img" src="img/lionGroup.svg" alt="Лев" />
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="reviews">
+    <div class="container">
+        <div class="reviews__inner">
+            <h2 class="reviews__header">Отзывы</h2>
+            <div class="reviews__list-container swiper-container">
+                <ul class="reviews__list swiper-wrapper">
+                    <li class="review swiper-slide">
+                        <img
+                            src="img/Ольга_Власьева.png"
+                            alt="Ольга Власьева"
+                            class="review__image"
+                        />
+                        <div class="review__text-box">
+                            <h3 class="review__header">
+                                Ольга Власьева
+                            </h3>
+                            <p class="review__content">
+                                Огромное спасибо Станиславу, настоящий
+                                профессионал своего дела! Помог с оформлением
+                                ипотеки, посоветовал банк, где на данный момент
+                                самый низкий процент, в день сделки оказалось,
+                                что не хватает одного документа, решил все
+                                вопросы с банком таким образом.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="review swiper-slide">
+                        <img
+                            src="img/Василий_Аркадьев.png"
+                            alt="Василий Аркадьев"
+                            class="review__image"
+                        />
+                        <div class="review__text-box">
+                            <h3 class="review__header">
+                                Василий Аркадьев
+                            </h3>
+                            <p class="review__content">
+                                Огромное спасибо Станиславу, настоящий
+                                профессионал своего дела! Помог с оформлением
+                                ипотеки, посоветовал банк, где на данный момент
+                                самый низкий процент, в день сделки оказалось,
+                                что не хватает одного документа, решил все
+                                вопросы с банком таким образом.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="review swiper-slide">
+                        <img
+                            src="img/Ольга_Власьева.png"
+                            alt="Ольга Власьева"
+                            class="review__image"
+                        />
+                        <div class="review__text-box">
+                            <h3 class="review__header">
+                                Ольга Власьева
+                            </h3>
+                            <p class="review__content">
+                                Огромное спасибо Станиславу, настоящий
+                                профессионал своего дела! Помог с оформлением
+                                ипотеки, посоветовал банк, где на данный момент
+                                самый низкий процент, в день сделки оказалось,
+                                что не хватает одного документа, решил все
+                                вопросы с банком таким образом.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="review swiper-slide">
+                        <img
+                            src="img/Василий_Аркадьев.png"
+                            alt="Василий Аркадьев"
+                            class="review__image"
+                        />
+                        <div class="review__text-box">
+                            <h3 class="review__header">
+                                Василий Аркадьев
+                            </h3>
+                            <p class="review__content">
+                                Огромное спасибо Станиславу, настоящий
+                                профессионал своего дела! Помог с оформлением
+                                ипотеки, посоветовал банк, где на данный момент
+                                самый низкий процент, в день сделки оказалось,
+                                что не хватает одного документа, решил все
+                                вопросы с банком таким образом.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div
+                    class="reviews-pagination swiper-pagination"
+                    id="reviews-pagination"
+                ></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="partners">
+    <div class="container">
+        <div class="partners__inner">
+            <h3 class="partners__header">Наши партнеры</h3>
+            <div class="line"></div>
+            <div class="partners__text">
+                Работаем только с проверенными партнерами — ведущими
+                застройщиками и банками страны.
+            </div>
+            <ul class="partners__list">
+                <li class="partners__list-item">
+                    <img
+                        class="partners__list-item__img"
+                        src="img/Skb_logo.svg"
+                        alt="СКБ-банк"
+                    />
+                </li>
+                <li class="partners__list-item">
+                    <img
+                        class="partners__list-item__img"
+                        src="img/logo-tochka.svg"
+                        alt="Банк Точка"
+                    />
+                </li>
+                <li class="partners__list-item">
+                    <img
+                        class="partners__list-item__img"
+                        src="img/logo-bank-soyuz.svg"
+                        alt="Банк Союз"
+                    />
+                </li>
+                <li class="partners__list-item">
+                    <img
+                        class="partners__list-item__img"
+                        src="img/logo-bib_1_.svg"
+                        alt="Банк Реалист"
+                    />
+                </li>
+                <li class="partners__list-item">
+                    <img
+                        class="partners__list-item__img"
+                        src="img/logo-bank-otkrytie.svg"
+                        alt="Банк Открытие"
+                    />
+                </li>
+                <li class="partners__list-item">
+                    <img
+                        class="partners__list-item__img"
+                        src="img/logo-baltiyskiy-bank.svg"
+                        alt="Балтийский банк"
+                    />
+                </li>
+                <li class="partners__list-item">
+                    <img
+                        class="partners__list-item__img"
+                        src="img/logo_gazprombank.svg"
+                        alt="Газпромбанк"
+                    />
+                </li>
+                <li class="partners__list-item">
+                    <img
+                        class="partners__list-item__img"
+                        src="img/b052f60fded0627771268f4fd792af07949bd9b8_1500_2500_0.svg"
+                        alt="Тинькофф Мобайл"
+                    />
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
         </main>
         <footer class="footer">
     <div class="container">
@@ -120,23 +711,39 @@
             <div class="footer__nav">
                 <h5 class="footer__company-name">Бюро Недвижимости</h5>
                 <ul class="footer__nav-list">
-                    <li class="footer__nav-list-item">Главная</li>
-                    <li class="footer__nav-list-item">О нас</li>
                     <li class="footer__nav-list-item">
-                        Каталог объектов
+                        <a href="/">Главная</a>
                     </li>
-                    <li class="footer__nav-list-item">Новости</li>
-                    <li class="footer__nav-list-item">Отзывы</li>
-                    <li class="footer__nav-list-item">Контакты</li>
+                    <li class="footer__nav-list-item">
+                        <a href="/about.html">О нас</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/catalog.html">
+                            Каталог объектов
+                        </a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/news-list.html">Новости</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/reviews.html">Отзывы</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/contacts.html">Контакты</a>
+                    </li>
                 </ul>
             </div>
             <div class="footer__info">
                 <h5 class="footer__info-header">Информация</h5>
                 <ul class="footer__info-list">
-                    <li class="footer__info-list-item">Контакты</li>
-                    <li class="footer__info-list-item">FAQ</li>
                     <li class="footer__info-list-item">
-                        Политика конфиденциальности
+                        <a href="/contacts.html">Контакты</a>
+                    </li>
+                    <li class="footer__info-list-item"><a href="/">FAQ</a></li>
+                    <li class="footer__info-list-item">
+                        <a href="/">
+                            Политика конфиденциальности
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -163,33 +770,37 @@
                 </ul>
                 <ul class="footer__social-media-list">
                     <li class="footer__social-media-list-item">
-                        <img
-                            class="footer__social-media__icon"
-                            src="/img/facebook.svg"
-                            alt="Facebook"
-                        />
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/facebook.svg"
+                                alt="Facebook"
+                        /></a>
                     </li>
                     <li class="footer__social-media-list-item">
-                        <img
-                            class="footer__social-media__icon"
-                            src="/img/vk.svg"
-                            alt="ВКонтакте"
-                        />
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/vk.svg"
+                                alt="ВКонтакте"
+                        /></a>
                     </li>
                     <li class="footer__social-media-list-item">
-                        <img
-                            class="footer__social-media__icon"
-                            src="/img/instagram.svg"
-                            alt="Instagram"
-                        />
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/instagram.svg"
+                                alt="Instagram"
+                        /></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="footer__line"></div>
+        <div class="line"></div>
         <div class="footer__copyright">2019 © Все права защищены.</div>
     </div>
 </footer>
 
+        <script src="./bundle.js"></script>    
     </body>
 </html>

@@ -1,5 +1,5 @@
 .header {
-    z-index: 1;
+    z-index: 2;
     position: relative;
     height: 4.653vw;
     padding-top: 1.3vw;
@@ -13,6 +13,8 @@
 
 .logo {
     width: 16.875vw;
+    height: 3.403vw;
+    background: center / contain no-repeat url(../img/logo_light-theme.svg);
 }
 
 .nav__list {

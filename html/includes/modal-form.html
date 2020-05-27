@@ -8,7 +8,7 @@
                 Наши специалисты организуют просмотр квартиры и проведут сделку
             </div>
         </div>
-        <form action="submit" class="modal-form">
+        <form class="modal-form form">
             <div class="modal-form-group">
                 <input
                     type="text"
@@ -17,9 +17,10 @@
                     required
                 />
                 <input
-                    type="text"
-                    class="modal-form__input"
+                    type="tel"
+                    class="modal-form__input phone-number-input"
                     placeholder="Телефон"
+                    pattern="\+7 \d{3}-\d{3}-\d{2}-\d{2}"
                     required
                 />
             </div>
@@ -33,7 +34,6 @@
                 type="text"
                 class="modal-form__input modal-form__message-input"
                 placeholder="Ваше сообщение"
-                required
             />
             <div class="modal-form-footer">
                 <div class="modal-form__agree-block">
@@ -42,7 +42,23 @@
                             class="agree-block__checkbox"
                             type="checkbox"
                             name="subscribe"
-                        /><span class="agree-block__fake-checkbox"></span>
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
                         <span class="agree-block__checkbox__label"
                             >Подписка на новости</span
                         >
@@ -52,7 +68,24 @@
                             class="agree-block__checkbox"
                             type="checkbox"
                             name="isAgree"
-                        /><span class="agree-block__fake-checkbox"></span>
+                            required
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
                         <span class="agree-block__checkbox__label"
                             >Я согласен с предосталением персональных
                             данных</span
@@ -60,17 +93,18 @@
                     </label>
                 </div>
                 <div class="golden-frame">
-                    <button class="modal-form__submit-button" type="submit">
+                    <button class="modal-form__submit-button">
                         Отправить
                     </button>
                 </div>
             </div>
         </form>
-        <a href="#" class="modal-frame__close-button"
-            ><img
+        <button class="modal-form__close-button">
+            <img
                 src="/img/x.svg"
                 alt="Закрыть"
-                class="modal-frame__close-button__image"
-        /></a>
+                class="modal-form__close-button__image"
+            />
+        </button>
     </section>
 </div>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Контакты</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/header_light.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <link rel="stylesheet" href="css/coordinates.css" />
+        <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/form-submission-window.css" />
+        <link rel="stylesheet" href="css/contactsPage/index.css" />
+    </head>
+    <body>
+        <div id="modal-form" class="modal-form-background">
+    <section class="modal-form-container">
+        <div class="modal-form__title-box">
+            <div class="modal-form__title">
+                Ваша заявка
+            </div>
+            <div class="modal-form__text">
+                Наши специалисты организуют просмотр квартиры и проведут сделку
+            </div>
+        </div>
+        <form class="modal-form form">
+            <div class="modal-form-group">
+                <input
+                    type="text"
+                    class="modal-form__input"
+                    placeholder="Имя"
+                    required
+                />
+                <input
+                    type="tel"
+                    class="modal-form__input phone-number-input"
+                    placeholder="Телефон"
+                    pattern="\+7 \d{3}-\d{3}-\d{2}-\d{2}"
+                    required
+                />
+            </div>
+            <input
+                type="email"
+                class="modal-form__input modal-form__email-input"
+                placeholder="Почта"
+                required
+            />
+            <input
+                type="text"
+                class="modal-form__input modal-form__message-input"
+                placeholder="Ваше сообщение"
+            />
+            <div class="modal-form-footer">
+                <div class="modal-form__agree-block">
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="subscribe"
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
+                        <span class="agree-block__checkbox__label"
+                            >Подписка на новости</span
+                        >
+                    </label>
+                    <label class="agree-block__checkbox-label">
+                        <input
+                            class="agree-block__checkbox"
+                            type="checkbox"
+                            name="isAgree"
+                            required
+                        /><span class="agree-block__fake-checkbox">
+                            <svg
+                                class="agree-block__fake-checkbox__img"
+                                width="28"
+                                height="20"
+                                viewBox="0 0 28 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M2 10.5L10 18.5L26.5 2"
+                                    stroke="#F3C61C"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                />
+                            </svg>
+                        </span>
+                        <span class="agree-block__checkbox__label"
+                            >Я согласен с предосталением персональных
+                            данных</span
+                        >
+                    </label>
+                </div>
+                <div class="golden-frame">
+                    <button class="modal-form__submit-button">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </form>
+        <button class="modal-form__close-button">
+            <img
+                src="/img/x.svg"
+                alt="Закрыть"
+                class="modal-form__close-button__image"
+            />
+        </button>
+    </section>
+</div>
+
+        <div id="form-submission-window" class="form-submission-window-background">
+    <section class="form-submission-window-container">
+        <img class="form-submission-window__image" src="img/lion.svg" />
+        <div class="form-submission-window__title">
+            Заявка отправлена
+        </div>
+        <div class="form-submission-window__text">
+            Наши специалисты свяжутся с Вами в ближайшее время
+        </div>
+        <div class="golden-frame">
+            <button
+                class="form-submission-window__return-button form-submission-window__close-btn"
+            >
+                Отлично
+            </button>
+        </div>
+        <button
+            class="form-submission-window__close-button form-submission-window__close-btn"
+            ><img
+                src="/img/x.svg"
+                alt="Закрыть"
+                class="form-submission-window__close-button__image"
+        />
+    </section>
+</div>
+        
+        <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="/" class="logo"></a>
+            <nav class="nav">
+                <ul class="nav__list list">
+                    <li class="nav__item">
+                        <a href="/about.html" class="nav__link link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/catalog.html" class="nav__link link">
+                            Каталог объектов
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/news-list.html" class="nav__link link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="nav__item contacts">
+                        <a href="/contacts.html" class="nav__link link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <div class="golden-frame">
+                            <button class="nav__request-button">
+                                Оформить заявку
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <a class="phone" href="tel:78121341142">+7 (812) 134-11-42</a>
+        </div>
+    </div>
+</header>
+
+        <main>
+            <section class="coordinates">
+    <div class="container">
+        <div class="coordinates__inner">
+            <section class="coordinates__map">
+                <div class="coordinates__info-container">
+                    <div class="coordinates__info">
+                        <ul class="info__contacts-list">
+                            <li class="info__contacts-list-item">
+                                <a href="mailto:info@buro.estate" class="email"
+                                    >info@buro.estate</a
+                                >
+                            </li>
+                            <li class="info__contacts-list-item">
+                                <a href="tel:78126371000" class="phone"
+                                    >+7 (812) 637-10-00</a
+                                >
+                            </li>
+                            <li class="info__contacts-list-item">
+                                <a href="tel:79213525555" class="phone"
+                                    >+7 (921) 352-55-55</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="info__working-time">
+                            <span class="info__working-time__title"
+                                >Время работы офиса:</span
+                            >9:00–19:00 (Пн-Пт)
+                        </div>
+                        <div class="info__address">
+                            <span class="info__address__title">Адрес:</span
+                            >199004, Санкт-Петербург,<br />Набережная Макарова,
+                            д. 60
+                        </div>
+                    </div>
+                </div>
+                <img
+                    src="img/map-pointer.svg"
+                    alt="Указатель на карте"
+                    class="coordinates__map__pointer"
+                />
+            </section>
+            <section class="coordinates__form-container">
+                <div class="coordinates__form__title-box">
+                    <div class="coordinates__form__title">
+                        Остаемся на связи
+                    </div>
+                    <div class="coordinates__form__text">
+                        Ответим на ваши вопросы и предложим вам варианты
+                    </div>
+                </div>
+                <form class="coordinates__form form">
+                    <div class="coordinates__form-group">
+                        <input
+                            id="name"
+                            type="text"
+                            class="coordinates__form__input"
+                            placeholder="Имя"
+                            required
+                        />
+                        <input
+                            id="tel"
+                            type="tel"
+                            class="coordinates__form__input phone-number-input"
+                            placeholder="Телефон"
+                            pattern="\+7 \d{3}-\d{3}-\d{2}-\d{2}"
+                            required
+                        />
+                    </div>
+                    <input
+                        id="email"
+                        type="email"
+                        class="coordinates__form__input coordinates__form__email-input"
+                        placeholder="Почта"
+                        required
+                    />
+                    <input
+                        id="message"
+                        type="text"
+                        class="coordinates__form__input coordinates__form__message-input"
+                        placeholder="Ваше сообщение"
+                    />
+                    <div class="coordinates__form-footer">
+                        <div class="coordinates__form__agree-block">
+                            <label
+                                class="coordinates__form__agree-block__checkbox-label"
+                            >
+                                <input
+                                    class="coordinates__form__agree-block__checkbox"
+                                    type="checkbox"
+                                    name="isAgree"
+                                    required
+                                /><span
+                                    class="coordinates__form__agree-block__fake-checkbox"
+                                >
+                                    <svg
+                                        class="coordinates__form__agree-block__fake-checkbox__img"
+                                        width="28"
+                                        height="20"
+                                        viewBox="0 0 28 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M2 10.5L10 18.5L26.5 2"
+                                            stroke="#F3C61C"
+                                            stroke-width="2"
+                                            stroke-linecap="square"
+                                        />
+                                    </svg>
+                                </span>
+                                <span
+                                    id="agreement"
+                                    class="coordinates__form__agree-block__checkbox__label"
+                                    >Я согласен с предосталением персональных
+                                    данных</span
+                                >
+                            </label>
+                        </div>
+                        <div class="golden-frame">
+                            <button
+                                id="btn-submit"
+                                class="coordinates__form__submit-button"
+                                type="submit"
+                            >
+                                Отправить
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__nav">
+                <h5 class="footer__company-name">Бюро Недвижимости</h5>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-list-item">
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/about.html">О нас</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/catalog.html">
+                            Каталог объектов
+                        </a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/news-list.html">Новости</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/reviews.html">Отзывы</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="/contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__info">
+                <h5 class="footer__info-header">Информация</h5>
+                <ul class="footer__info-list">
+                    <li class="footer__info-list-item">
+                        <a href="/contacts.html">Контакты</a>
+                    </li>
+                    <li class="footer__info-list-item"><a href="/">FAQ</a></li>
+                    <li class="footer__info-list-item">
+                        <a href="/">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <h5 class="footer__contacts-header">
+                    Позвоните или напишите
+                </h5>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-list-item">
+                        <a href="mailto:info@buro.estate" class="email"
+                            >info@buro.estate</a
+                        >
+                    </li>
+                    <li class="footer__contacts-list-item">
+                        <a href="tel:78126371000" class="phone"
+                            >+7 (812) 637-10-00</a
+                        >
+                    </li>
+                    <li class="footer__contacts-list-item">
+                        <a href="tel:79213525555" class="phone"
+                            >+7 (921) 352-55-55</a
+                        >
+                    </li>
+                </ul>
+                <ul class="footer__social-media-list">
+                    <li class="footer__social-media-list-item">
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/facebook.svg"
+                                alt="Facebook"
+                        /></a>
+                    </li>
+                    <li class="footer__social-media-list-item">
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/vk.svg"
+                                alt="ВКонтакте"
+                        /></a>
+                    </li>
+                    <li class="footer__social-media-list-item">
+                        <a href="/"
+                            ><img
+                                class="footer__social-media__icon"
+                                src="/img/instagram.svg"
+                                alt="Instagram"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer__copyright">2019 © Все права защищены.</div>
+    </div>
+</footer>
+
+        <script src="./bundle.js"></script>
+    </body>
+</html>

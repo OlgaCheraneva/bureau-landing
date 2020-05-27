@@ -1,0 +1,81 @@
+.form-submission-window-background {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(23, 23, 23, 0.6);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-submission-window-container {
+    width: 44.583vw;
+    height: 29.861vw;
+    overflow: hidden;
+    background: #fff;
+    padding: 5.347vw 7vw 3.403vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-submission-window__image {
+    width: 5.768vw;
+    height: 5vw;
+}
+
+.form-submission-window__title {
+    font-size: 0.833vw;
+    line-height: 92%;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #f3c61c;
+    margin-bottom: 0.278vw;
+}
+
+.form-submission-window__text {
+    font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
+    font-size: 1.667vw;
+    line-height: 115%;
+    letter-spacing: 0.03em;
+    color: #333;
+    text-align: center;
+    padding-bottom: 3.819vw;
+}
+
+.form-submission-window__return-button {
+    font-size: 0.694vw;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #F3C61C;
+    padding: 1.25vw 2.708vw 0.764vw 2.917vw;
+}
+
+.form-submission-window-background .golden-frame {
+    z-index: 1;
+}
+
+.form-submission-window__close-button {
+    position: absolute;
+    top: 2.083vw;
+    right: 2.083vw;
+}
+
+.form-submission-window__close-button, .form-submission-window__close-button__image {
+    width: 1.597vw;
+    height: 1.597vw;
+}

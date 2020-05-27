@@ -43,6 +43,7 @@
 
 .about__header {
     font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
     font-size: 3.611vw;
     line-height: 95%;
     letter-spacing: 0.03em;

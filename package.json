@@ -1,21 +1,27 @@
 {
-    "name": "buro",
-    "version": "1.0.0",
-    "description": "example-webpack",
-    "main": "index.html",
-    "scripts": {
-        "dev": "webpack-dev-server --mode development",
-        "watch": "webpack --mode development --watch",
-        "start": "webpack-dev-server --mode production"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "raw-loader": "3.0.0",
-        "html-webpack-plugin": "4.0.0-beta.5",
-        "terser-webpack-plugin": "1.3.0",
-        "webpack": "4.35.2",
-        "webpack-cli": "3.3.5",
-        "webpack-dev-server": "3.7.2"
-    }
+  "name": "bureau-landing",
+  "version": "1.0.0",
+  "description": "example-webpack",
+  "main": "index.html",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode production"
+  },
+  "author": "Cheraneva Olga",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "3.0.0",
+    "eslint": "6.3.0",
+    "eslint-config-google": "0.14.0",
+    "html-webpack-plugin": "4.0.0-beta.5",
+    "raw-loader": "3.0.0",
+    "terser-webpack-plugin": "1.3.0",
+    "webpack": "4.35.2",
+    "webpack-cli": "3.3.5",
+    "webpack-dev-server": "3.7.2"
+  },
+  "dependencies": {
+    "inputmask": "4.0.8"
+  }
 }

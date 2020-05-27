@@ -7,32 +7,52 @@
         <title>Бюро Недвижимости</title>
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/header.css" />
-        <link rel="stylesheet" href="css/mainPage/intro.css" />
+        <link rel="stylesheet" href="css/intro.css" />
         <link rel="stylesheet" href="css/about.css" />
         <link rel="stylesheet" href="css/advantages.css" />
         <link rel="stylesheet" href="css/awards.css" />
-        <link rel="stylesheet" href="css/mainPage/new-objects.css" />
+        <link rel="stylesheet" href="css/new-objects.css" />
         <link rel="stylesheet" href="css/mainPage/news.css" />
-        <link rel="stylesheet" href="css/mainPage/coordinates.css" />
+        <link rel="stylesheet" href="css/coordinates.css" />
         <link rel="stylesheet" href="css/form.css" />
         <link rel="stylesheet" href="css/reviews.css" />
         <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/form-submission-window.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/swiper.min.css" />
     </head>
     <body>
         <%= _.template(require('./../includes/modal-form.html').default)() %>
+        <%= _.template(require('./../includes/form-submission-window.html').default)() %>        
         <%= _.template(require('./../includes/header.html').default)() %>
         <main>
             <%= _.template(require('./../includes/intro.html').default)() %> <%=
             _.template(require('./../includes/who-are-we.html').default)() %>
             <%= _.template(require('./../includes/advantages.html').default)()
             %> <%= _.template(require('./../includes/awards.html').default)() %>
-            <%= _.template(require('./../includes/new-objects.html').default)()
-            %> <%= _.template(require('./../includes/reviews.html').default)()
-            %> <%= _.template(require('./../includes/news.html').default)() %>
-            <%= _.template(require('./../includes/coordinates.html').default)()
-            %>
+            <section id="new-objects" class="new-objects">
+                <div class="container">
+                    <div class="new-objects__top">
+                        <h2 class="new-objects__header">Новые объекты</h2>
+                        <a href="/catalog.html" class="all-objects">
+                            Все объекты
+                            <img
+                                src="img/arrow_2.svg"
+                                alt="Стрелка"
+                                class="all-objects__arrow"
+                            />
+                        </a>
+                    </div>
+                    <div class="new-objects__content-container">
+                        <%=
+                        _.template(require('./../includes/new-objects.html').default)()
+                        %>
+                    </div>
+                </div>
+            </section>
+            <%= _.template(require('./../includes/reviews.html').default)() %>
+            <%= _.template(require('./../includes/news.html').default)() %> <%=
+            _.template(require('./../includes/coordinates.html').default)() %>
         </main>
         <%= _.template(require('./../includes/footer.html').default)() %>
         <script src="./bundle.js"></script>

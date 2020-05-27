@@ -11,6 +11,7 @@
 
 .news__header {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 3.611vw;
     line-height: 95%;
     letter-spacing: 0.03em;
@@ -24,6 +25,7 @@
 
 .news__date {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 0.972vw;
     line-height: 95%;
     letter-spacing: 0.03em;
@@ -33,6 +35,7 @@
 
 .news__headline {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 1.667vw;
     line-height: 135%;
     letter-spacing: 0.03em;
@@ -67,6 +70,7 @@
 
 .all-news__link {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 1.25vw;
     line-height: 95%;
     letter-spacing: 0.03em;
@@ -83,6 +87,7 @@
 
 .news__list-item__date {
     font-family: 'Beaumaris Demo', sans-serif;
+    font-weight: 400;
     font-size: 0.972vw;
     line-height: 95%;
     letter-spacing: 0.06em;

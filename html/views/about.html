@@ -8,66 +8,40 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/catalogPage/headline.css" />
-        <link rel="stylesheet" href="css/catalogPage/section_2.css" />
+        <link rel="stylesheet" href="css/aboutPage/index.css">
+        <link rel="stylesheet" href="css/newsListPage/headline.css" />
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/advantages.css" />
+        <link rel="stylesheet" href="css/team.css" />
+        <link rel="stylesheet" href="css/awards.css" />
+        <link rel="stylesheet" href="css/mission.css" />
+        <link rel="stylesheet" href="css/reviews.css" />
+        <link rel="stylesheet" href="css/partners.css" />
+        <link rel="stylesheet" href="css/modal-form.css" />
+        <link rel="stylesheet" href="css/form-submission-window.css" />
+        <link rel="stylesheet" href="css/swiper.min.css" />
     </head>
     <body>
+        <%= _.template(require('./../includes/modal-form.html').default)() %>
+        <%= _.template(require('./../includes/form-submission-window.html').default)() %>
         <%= _.template(require('./../includes/header.html').default)() %>
         <main>
-            <section class="headline">
-                <div class="headline__background-light-theme"></div>
-                <img
-                    class="pointer-to-left"
-                    src="img/Group 5.svg"
-                    alt="Стрелка влево"
-                    title="Стрелка влево"
-                />
-                <div class="catalog__title">
-                    <h1 class="event__title">Наши объекты</h1>
-                    <div class="line-light-theme__news"></div>
-                    <form class="search-bar">
-                        <div class="area-input-wrapper">
-                            <select class="area search-bar__input">
-                                <option>Район</option>
-                            </select>
-                            <img
-                                class="geo"
-                                src="img/geo.png"
-                                alt="Район"
-                                title="Район"
-                            />
-                        </div>
-                        <input
-                            type="text"
-                            class="search-bar__input"
-                            placeholder="1к. кв."
-                        />
-                        <input
-                            type="text"
-                            class="search-bar__input"
-                            placeholder="Метраж"
-                        />
-                        <input
-                            type="text"
-                            class="search-bar__input"
-                            placeholder="Сортировать"
-                        />
-                        <div class="golden-frame golden-frame__background">
-                            <button class="catalog__search-button">
-                                Смотреть
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <img
-                    class="pointer-to-down"
-                    src="img/Group 11.svg"
-                    alt="Стрелка вниз"
-                    title="Стрелка вниз"
-                />
-            </section>
-            <section></section>
+            <% var data = { description: "О компании", text: "Узнайте больше о" +
+            "нашем развитии, мероприятиях, новых партнерах, идеях и проектах.",
+            img: {src:"image 8.png", alt: "Коллеги", title: "Коллеги"} }; %>
+            <%=
+            _.template(require('./../includes/headline.html').default)(data)%>
+            <div class="indentation-block"></div>
+            <div id="second-page-block"><%= _.template(require('./../includes/who-are-we.html').default)()
+            %></div> <%=
+            _.template(require('./../includes/advantages.html').default)() %>
+            <%= _.template(require('./../includes/team.html').default)() %>
+            <%= _.template(require('./../includes/awards.html').default)() %>
+            <%= _.template(require('./../includes/mission.html').default)() %>
+            <%= _.template(require('./../includes/reviews.html').default)() %>
+            <%= _.template(require('./../includes/partners.html').default)() %>
         </main>
         <%= _.template(require('./../includes/footer.html').default)() %>
+        <script src="./bundle.js"></script>    
     </body>
 </html>

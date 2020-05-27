@@ -19,6 +19,10 @@
 body {
     font-family: 'Gotham Pro', sans-serif;
     overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 * {
@@ -65,4 +69,20 @@ main {
     transform: translate3d(0.278vw, 0.208vw, 0);
     content: '';
     border: 0.035vw solid #f3c61c;
+}
+
+.line {
+    width: 4.17vw;
+    height: 0.069vw;
+    background: #f3c61c;
+    margin: 2.153vw 0;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

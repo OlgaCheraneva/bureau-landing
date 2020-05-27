@@ -29,7 +29,7 @@
     color: #F3C61C;
 }
 
-.footer__nav-list-item, .footer__info-list-item {
+.footer__nav-list-item, .footer__info-list-item, .footer__nav-list-item a, .footer__info-list-item a {
     color: #969595;
 }
 
@@ -39,11 +39,16 @@
 
 .footer__contacts-header {
     font-family: 'Beaumaris Demo', serif;
+    font-weight: 400;
     font-size: 1.667vw;
     line-height: 115%;
     letter-spacing: 0.03em;
     color: #fff;
     margin-bottom: 1.25vw;
+}
+
+.footer__contacts-list-item {
+    padding-bottom: 1vw;
 }
 
 .footer__contacts-list-item .email {
@@ -69,8 +74,8 @@
 
 .footer__line {
     width: 4.931vw;
-    border: 0.069vw solid #F3C61C;
-    margin: 1.458vw 0 1.354vw;
+    height: 0.069vw;
+    background: #f3c61c;
 }
 
 .footer__copyright {
@@ -78,4 +83,8 @@
     line-height: 156.78%;
     letter-spacing: 0.05em;
     color: #969595;
+}
+
+.footer__contacts-list-item .phone {
+    color: #fff;
 }
